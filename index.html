@@ -4,150 +4,171 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog Atacadão Farma Centro</title>
-
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
   <style>
     body { font-family: 'Roboto', sans-serif; margin: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
     header { background: linear-gradient(135deg, #008080, #20B2AA); color: white; text-align: center; padding: 30px 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
     .header-content h1 { margin: 0; font-size: 2.5em; }
     .header-content p { margin: 10px 0; font-style: italic; font-size: 0.8em; }
     nav { margin-top: 15px; }
-    nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
+    nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; transition: color 0.3s, transform 0.2s; }
+    nav a:hover { color: #00BFFF; transform: scale(1.1); }
+    nav i { margin-right: 5px; }
     .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
     h2, h3 { color: #008080; }
+    a { color: #00BFFF; }
     .post-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-    .post-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+    .post-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #e0e0e0; transition: transform 0.3s, box-shadow 0.3s; }
+    .post-card:hover { transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
     .post-date { font-size: 0.9em; color: #777; }
     .read-more { display: inline-block; background: #00BFFF; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; }
     .cta { text-align: center; margin: 40px 0; background: #e0f7fa; padding: 20px; border-radius: 10px; }
     .btn { background: #008080; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    .btn:hover { background: #006666; }
     footer { background: #eee; text-align: center; padding: 15px; font-size: 0.9em; border-top: 1px solid #ddd; }
-    @media (max-width: 768px) { nav a { display: block; margin: 10px 0; } }
+    @media (max-width: 768px) { header { padding: 20px; } nav a { display: block; margin: 10px 0; } .post-list { grid-template-columns: 1fr; } }
   </style>
 </head>
-
 <body>
+  <header>
+    <div class="header-content">
+      <h1>Blog Atacadão Farma Centro</h1>
+      <p>Drogaria do Pericles</p>
+    </div>
+    <nav>
+      <a href="https://atacadaofarmacentro.github.io/atacadaofarmacentro/"><i class="fas fa-home"></i> Site Principal</a>
+      <a href="https://wa.me/556196592066?text=Olá!%20Vi%20no%20blog%20e%20quero%20mais%20dicas." target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.instagram.com/farmacentro061/?igsh=MTZzNHo2cnZoNXBuZg%3D%3D" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    </nav>
+  </header>
+  
+  <main class="container">
+    <p>Olá, clientes queridos! Aqui compartilhamos <strong>dicas de saúde práticas e confiáveis</strong> para melhorar seu dia a dia. Lembre-se: não substitui consulta médica.</p>
 
-<header>
-  <div class="header-content">
-    <h1>Blog Atacadão Farma Centro</h1>
-    <p>Drogaria do Pericles</p>
-  </div>
-  <nav>
-    <a href="https://atacadaofarmacentro.github.io/atacadaofarmacentro/">Site Principal</a>
-    <a href="https://wa.me/556196592066">WhatsApp</a>
-    <a href="https://www.instagram.com/farmacentro061/">Instagram</a>
-  </nav>
-</header>
+    <div class="post-list">
 
-<main class="container">
+      <div class="post-card">
+        <h3>Dica de Saúde: Jejum de Informação — Desintoxicação Mental Digital</h3>
+        <p class="post-date">26/10/2025</p>
+        <p>Descubra como desconectar um pouco pode renovar sua mente e seu corpo!</p>
+        <a href="#jejuminfo" class="read-more">Leia mais →</a>
+      </div>
 
-<p>Olá, clientes queridos! Aqui compartilhamos <strong>dicas de saúde práticas e confiáveis</strong> para o seu dia a dia.</p>
+      <div class="post-card">
+        <h3>Dica de Saúde: Goji Berry — Fortalece a Imunidade e Ajuda na Candidíase</h3>
+        <p class="post-date">26/10/2025</p>
+        <p>A frutinha poderosa rica em antioxidantes e vitamina C que ajuda na saúde intestinal e imunológica.</p>
+        <a href="#gojiberry" class="read-more">Leia mais →</a>
+      </div>
 
-<div class="post-list">
+      <div class="post-card">
+        <h3>Dica de Saúde: Os Benefícios das Vitaminas para o Seu Dia a Dia</h3>
+        <p class="post-date">09/08/2025</p>
+        <p>Descubra como as vitaminas podem turbinar sua energia e imunidade!</p>
+        <a href="#vitaminas" class="read-more">Leia mais →</a>
+      </div>
 
-<div class="post-card">
-  <h3>Estamos mais preguiçosos… ou apenas mentalmente sobrecarregados?</h3>
-  <p class="post-date">Janeiro / 2026</p>
-  <p>Não é preguiça. Não é TDAH. É excesso de informação.</p>
-  <a href="#sobrecarga" class="read-more">Leia mais →</a>
-</div>
+      <div class="post-card">
+        <h3>Dica de Saúde: A Importância da Hidratação no Verão</h3>
+        <p class="post-date">10/08/2025</p>
+        <p>Aprenda a se manter hidratado e evite problemas comuns!</p>
+        <a href="#hidratacao" class="read-more">Leia mais →</a>
+      </div>
 
-<div class="post-card">
-  <h3>Jejum de Informação — Desintoxicação Mental Digital</h3>
-  <p class="post-date">26/10/2025</p>
-  <p>Descubra como desconectar pode renovar sua mente.</p>
-  <a href="#jejuminfo" class="read-more">Leia mais →</a>
-</div>
+      <div class="post-card">
+        <h3>Dica de Saúde: Exercícios Simples para Manter a Forma em Casa</h3>
+        <p class="post-date">11/08/2025</p>
+        <p>Comece hoje com rotinas fáceis e eficazes!</p>
+        <a href="#exercicios" class="read-more">Leia mais →</a>
+      </div>
 
-<div class="post-card">
-  <h3>Goji Berry — Fortalece a Imunidade</h3>
-  <p class="post-date">26/10/2025</p>
-  <p>Rica em antioxidantes e vitamina C.</p>
-  <a href="#gojiberry" class="read-more">Leia mais →</a>
-</div>
+      <div class="post-card">
+        <h3>Dica de Saúde: Por que Beber Água é Essencial para Sua Saúde</h3>
+        <p class="post-date">12/08/2025</p>
+        <p>Saiba como a água mantém seu corpo funcionando perfeitamente!</p>
+        <a href="#agua" class="read-more">Leia mais →</a>
+      </div>
 
-<div class="post-card">
-  <h3>Os Benefícios das Vitaminas</h3>
-  <p class="post-date">09/08/2025</p>
-  <p>Energia, imunidade e bem-estar.</p>
-  <a href="#vitaminas" class="read-more">Leia mais →</a>
-</div>
+      <div class="post-card">
+        <h3>Dica de Saúde: Os Benefícios do Magnésio para a Saúde</h3>
+        <p class="post-date">13/08/2025</p>
+        <p>Descubra como o magnésio pode melhorar sua vida!</p>
+        <a href="#magnesio" class="read-more">Leia mais →</a>
+      </div>
 
-<div class="post-card">
-  <h3>A Importância da Hidratação</h3>
-  <p class="post-date">10/08/2025</p>
-  <p>Evite problemas comuns no dia a dia.</p>
-  <a href="#hidratacao" class="read-more">Leia mais →</a>
-</div>
+      <div class="post-card">
+        <h3>Dica de Saúde: Os Benefícios da Cúrcuma (Açafrão-da-Terra)</h3>
+        <p class="post-date">14/08/2025</p>
+        <p>Conheça os efeitos anti-inflamatórios e antioxidantes poderosos!</p>
+        <a href="#curcuma" class="read-more">Leia mais →</a>
+      </div>
 
-<div class="post-card">
-  <h3>Exercícios Simples em Casa</h3>
-  <p class="post-date">11/08/2025</p>
-  <p>Movimente-se sem sair de casa.</p>
-  <a href="#exercicios" class="read-more">Leia mais →</a>
-</div>
+      <div class="post-card">
+        <h3>Dica de Saúde: A Importância do Umidificador em Casa</h3>
+        <p class="post-date">19/08/2025</p>
+        <p>Veja como um umidificador ajuda nas vias respiratórias!</p>
+        <a href="#umidificador" class="read-more">Leia mais →</a>
+      </div>
 
-<div class="post-card">
-  <h3>Por que Beber Água é Essencial</h3>
-  <p class="post-date">12/08/2025</p>
-  <p>Seu corpo agradece.</p>
-  <a href="#agua" class="read-more">Leia mais →</a>
-</div>
+      <div class="post-card">
+        <h3>Dica de Saúde: Óleo de Rícino para Cabelos e Sobrancelhas</h3>
+        <p class="post-date">25/08/2025</p>
+        <p>Fortalece os fios e estimula o crescimento natural.</p>
+        <a href="#oleoricino" class="read-more">Leia mais →</a>
+      </div>
 
-<div class="post-card">
-  <h3>Benefícios do Magnésio</h3>
-  <p class="post-date">13/08/2025</p>
-  <p>Importante para músculos e mente.</p>
-  <a href="#magnesio" class="read-more">Leia mais →</a>
-</div>
+    </div>
 
-<div class="post-card">
-  <h3>Benefícios da Cúrcuma</h3>
-  <p class="post-date">14/08/2025</p>
-  <p>Poder anti-inflamatório natural.</p>
-  <a href="#curcuma" class="read-more">Leia mais →</a>
-</div>
+    <section id="jejuminfo">
+      <h2>Dica de Saúde: Jejum de Informação — Desintoxicação Mental Digital</h2>
+      <p>Você já ouviu falar em <strong>jejum de informação</strong>? ...</p>
+      <ul>
+        <li>Reduz ansiedade e fadiga mental.</li>
+        <li>Melhora o sono e o foco.</li>
+        <li>Aumenta a criatividade.</li>
+      </ul>
+      <p><em>Consulte um profissional quando necessário.</em></p>
+    </section>
 
-<div class="post-card">
-  <h3>Óleo de Rícino</h3>
-  <p class="post-date">25/08/2025</p>
-  <p>Cabelos e sobrancelhas mais fortes.</p>
-  <a href="#oleoricino" class="read-more">Leia mais →</a>
-</div>
+    <section id="gojiberry">
+      <h2>Dica de Saúde: Goji Berry — A Frutinha Poderosa que Fortalece sua Imunidade</h2>
 
-</div>
+      <p>A <strong>Goji Berry</strong> é um dos alimentos mais nutritivos do mundo, rica em antioxidantes, vitaminas e minerais que fortalecem o corpo e ajudam no equilíbrio intestinal e imunológico.</p>
 
-<section id="sobrecarga">
-<h2>Estamos mais preguiçosos… ou apenas sobrecarregados?</h2>
-<p>Não é preguiça. É excesso de estímulos, opiniões e informações.</p>
-<p>Hoje usamos calculadora, GPS, vídeos e redes sociais para decidir tudo.</p>
-<p>O cérebro cansa, perde foco e identidade.</p>
-<p>Cuidar da saúde mental é voltar ao simples.</p>
-</section>
+      <h3>🍒 Benefícios da Goji Berry</h3>
+      <ul>
+        <li>Rica em vitamina C e antioxidantes potentes.</li>
+        <li>Fortalece o sistema imunológico.</li>
+        <li>Melhora o funcionamento do intestino devido às fibras.</li>
+        <li>Ajuda a controlar glicemia.</li>
+        <li>Aumenta energia, bem-estar e disposição.</li>
+      </ul>
 
-<section id="jejuminfo">
-<h2>Jejum de Informação</h2>
-<p>Desconectar um pouco ajuda a mente a se reorganizar.</p>
-</section>
+      <h3>🦠 Goji Berry e Candidíase</h3>
+      <p>A candidíase aparece quando a imunidade cai ou o intestino fica desequilibrado. A Goji Berry ajuda porque:</p>
+      <ul>
+        <li><strong>Fortalece a imunidade:</strong> vitamina C e zinco ajudam o corpo a combater fungos.</li>
+        <li><strong>Equilibra a flora intestinal:</strong> essencial para prevenir crises repetidas.</li>
+        <li><strong>Ação anti-inflamatória:</strong> reduz irritações e melhora o bem-estar.</li>
+      </ul>
 
-<section id="gojiberry">
-<h2>Goji Berry</h2>
-<p>Antioxidante natural que fortalece a imunidade.</p>
-</section>
+      <h3>📌 Como consumir</h3>
+      <p>Consuma 1 a 2 colheres de sopa por dia, pura ou misturada com iogurte, vitaminas, água ou frutas.</p>
 
-<section class="cta">
-<h2>Precisa de ajuda?</h2>
-<a href="https://wa.me/556196592066" class="btn">Fale no WhatsApp</a>
-</section>
+      <p><em>(Não substitui tratamento médico. Procure orientação profissional se necessário.)</em></p>
+    </section>
 
-</main>
+    <section class="cta">
+      <h2>Precisa de ajuda? Fale conosco no WhatsApp</h2>
+      <a href="https://wa.me/556196592066" class="btn">Fale no WhatsApp</a>
+    </section>
 
-<footer>
-<p>© 2025 Atacadão Farma Centro</p>
-</footer>
+  </main>
+  
+  <footer>
+    <p>© 2025 Atacadão Farma Centro. Cuide da sua saúde com a gente!</p>
+  </footer>
 
 </body>
 </html>
