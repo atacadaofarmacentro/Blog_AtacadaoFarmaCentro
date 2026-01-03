@@ -8,40 +8,27 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body { font-family: 'Roboto', sans-serif; margin: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
-    
     header { background: #009688; color: white; text-align: center; padding: 40px 20px; }
     header h1 { margin: 0; font-size: 2.5em; font-weight: 700; }
     header p { margin: 10px 0 20px; font-style: italic; font-size: 0.9em; opacity: 0.9; }
-    
     nav { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
     nav a { color: white; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: opacity 0.3s; display: flex; align-items: center; gap: 8px; }
     nav a:hover { opacity: 0.7; }
-
     .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
     .intro-text { text-align: center; margin-bottom: 40px; color: #555; }
-
     .post-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 25px; margin-bottom: 50px; }
-    
     .post-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 1px solid #eee; display: flex; flex-direction: column; }
     .post-card h3 { color: #00796b; margin-top: 0; font-size: 1.4em; line-height: 1.3; }
     .post-date { font-size: 0.85em; color: #aaa; margin: -10px 0 15px; }
     .post-card p { color: #666; font-size: 1em; margin-bottom: 20px; flex-grow: 1; }
-    
     .read-more { display: inline-block; background: #00b0ff; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; width: fit-content; transition: background 0.3s; }
     .read-more:hover { background: #0081cb; }
-
     section { background: white; padding: 40px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); scroll-margin-top: 20px; }
     section h2 { color: #00796b; border-bottom: 2px solid #00b0ff; padding-bottom: 10px; margin-top: 0; }
-
     .cta { text-align: center; margin: 50px 0; background: #e0f2f1; padding: 40px; border-radius: 12px; }
     .btn-whatsapp { background: #00796b; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; font-size: 1.1em; }
-    
     footer { background: #f1f1f1; text-align: center; padding: 25px; font-size: 0.9em; color: #777; border-top: 1px solid #ddd; }
-
-    @media (max-width: 768px) { 
-      .post-list { grid-template-columns: 1fr; }
-      header h1 { font-size: 1.8em; }
-    }
+    @media (max-width: 768px) { .post-list { grid-template-columns: 1fr; } header h1 { font-size: 1.8em; } }
   </style>
 </head>
 <body>
@@ -57,77 +44,77 @@
   </header>
   
   <main class="container">
-    <p class="intro-text">Olá, clientes queridos! Aqui compartilhamos <strong>dicas de saúde práticas e confiáveis</strong> para melhorar seu dia a dia.</p>
+    <p class="intro-text">Olá, clientes queridos! Confira nossas <strong>dicas de saúde</strong> para melhorar seu dia a dia.</p>
 
     <div class="post-list">
       
       <div class="post-card">
-        <h3>Estamos mais preguiçosos... ou apenas mentalmente sobrecarregados?</h3>
+        <h3>Estamos mais preguiçosos... ou apenas sobrecarregados?</h3>
         <p class="post-date">Janeiro / 2026</p>
-        <p>Não é preguiça. Não é TDAH. É excesso de informação. Hoje usamos calculadora, GPS e redes sociais para decidir tudo.</p>
+        <p>Não é preguiça. É excesso de informação. Saiba como lidar com o cansaço mental do dia a dia.</p>
         <a href="#sobrecarga" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
-        <h3>Dica de Saúde: Goji Berry — Fortalece a Imunidade e Ajuda na Candidíase</h3>
+        <h3>Goji Berry — Fortalece a Imunidade</h3>
         <p class="post-date">26/10/2025</p>
-        <p>A frutinha poderosa rica em antioxidantes e vitamina C que ajuda na saúde intestinal e imunológica.</p>
+        <p>A frutinha poderosa rica em antioxidantes e vitamina C para sua saúde intestinal.</p>
         <a href="#gojiberry" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
-        <h3>Dica de Saúde: Os Benefícios das Vitaminas para o Seu Dia a Dia</h3>
+        <h3>Os Benefícios das Vitaminas</h3>
         <p class="post-date">09/08/2025</p>
-        <p>Energia, imunidade e bem-estar. Descubra como as vitaminas podem turbinar sua saúde!</p>
+        <p>Descubra como as vitaminas podem turbinar sua energia e imunidade!</p>
         <a href="#vitaminas" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
-        <h3>Dica de Saúde: A Importância da Hidratação no Verão</h3>
+        <h3>A Importância da Hidratação</h3>
         <p class="post-date">10/08/2025</p>
-        <p>Evite problemas comuns no dia a dia. Aprenda a se manter hidratado corretamente.</p>
+        <p>Aprenda a se manter hidratado e evite problemas comuns no calor.</p>
         <a href="#hidratacao" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
-        <h3>Dica de Saúde: Exercícios Simples em Casa</h3>
+        <h3>Exercícios Simples em Casa</h3>
         <p class="post-date">11/08/2025</p>
-        <p>Movimente-se sem sair de casa. Dicas práticas para manter o corpo ativo.</p>
+        <p>Movimente-se sem sair de casa com rotinas fáceis e eficazes.</p>
         <a href="#exercicios" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
-        <h3>Dica de Saúde: Por que Beber Água é Essencial</h3>
+        <h3>Por que Beber Água é Essencial</h3>
         <p class="post-date">12/08/2025</p>
-        <p>Seu corpo agradece. Entenda como a água age em cada órgão do seu organismo.</p>
+        <p>Seu corpo agradece. Saiba como a água age no seu organismo.</p>
         <a href="#agua" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
-        <h3>Dica de Saúde: Benefícios do Magnésio</h3>
+        <h3>Benefícios do Magnésio</h3>
         <p class="post-date">13/08/2025</p>
-        <p>Importante para músculos e mente. Melhore seu sono e sua disposição diária.</p>
+        <p>Importante para músculos e mente. Melhore seu sono e disposição.</p>
         <a href="#magnesio" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
-        <h3>Dica de Saúde: Benefícios da Cúrcuma</h3>
+        <h3>Benefícios da Cúrcuma</h3>
         <p class="post-date">14/08/2025</p>
-        <p>Poder anti-inflamatório natural. Conheça os segredos do açafrão-da-terra.</p>
+        <p>Poder anti-inflamatório natural para suas articulações e saúde geral.</p>
         <a href="#curcuma" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
-        <h3>Dica de Saúde: A Importância do Umidificador em Casa</h3>
+        <h3>Umidificador em Casa</h3>
         <p class="post-date">19/08/2025</p>
-        <p>Veja como um umidificador ajuda nas suas vias respiratórias e melhora o sono.</p>
+        <p>Veja como um umidificador ajuda nas suas vias respiratórias no tempo seco.</p>
         <a href="#umidificador" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
-        <h3>Dica de Saúde: Óleo de Rícino para Cabelos e Sobrancelhas</h3>
+        <h3>Óleo de Rícino</h3>
         <p class="post-date">25/08/2025</p>
-        <p>Cabelos e sobrancelhas mais fortes. Estimule o crescimento de forma natural.</p>
+        <p>Fortalece os fios e estimula o crescimento natural de cabelos e sobrancelhas.</p>
         <a href="#oleoricino" class="read-more">Leia mais →</a>
       </div>
 
@@ -135,66 +122,63 @@
 
     <section id="sobrecarga">
       <h2>Estamos mais preguiçosos... ou apenas sobrecarregados?</h2>
-      <p>Não é preguiça. Não é falta de vontade. É o excesso de estímulos. Hoje processamos mais informações em um dia do que nossos avós em um mês.</p>
-      <p>Essa sobrecarga faz o cérebro "travar". O segredo para recuperar a energia é simplificar as escolhas e reduzir o tempo de tela.</p>
+      <p>O cansaço que sentimos hoje muitas vezes não é físico, mas mental. O excesso de telas e notificações drena nossa energia.</p>
     </section>
 
     <section id="gojiberry">
-      <h2>Dica de Saúde: Goji Berry — Fortalece a Imunidade e Ajuda na Candidíase</h2>
-      <p>A Goji Berry é riquíssima em vitamina C e antioxidantes. Ela ajuda a fortalecer as barreiras naturais do corpo e equilibra a flora, auxiliando no combate a fungos como a cândida.</p>
-      <p>A frutinha ajuda na saúde intestinal e imunológica de forma natural.</p>
+      <h2>Goji Berry — Imunidade e Bem-estar</h2>
+      <p>Rica em Vitamina C, a Goji Berry ajuda a fortalecer o sistema imunológico e a combater radicais livres.</p>
     </section>
 
     <section id="vitaminas">
-      <h2>Os Benefícios das Vitaminas para o Seu Dia a Dia</h2>
-      <p>As vitaminas são fundamentais para turbinar sua energia e imunidade. Elas garantem o bem-estar e o bom funcionamento de todos os sistemas do corpo.</p>
+      <h2>Os Benefícios das Vitaminas</h2>
+      <p>As vitaminas garantem que seu corpo tenha os nutrientes necessários para produzir energia e se defender de doenças.</p>
     </section>
 
     <section id="hidratacao">
-      <h2>A Importância da Hidratação no Verão</h2>
-      <p>Manter-se hidratado evita problemas comuns como dores de cabeça e cansaço excessivo. No verão, a reposição de líquidos deve ser constante para manter o equilíbrio do organismo.</p>
+      <h2>A Importância da Hidratação</h2>
+      <p>Beber água regula a temperatura do corpo e mantém a pele e os órgãos funcionando corretamente.</p>
     </section>
 
     <section id="exercicios">
       <h2>Exercícios Simples em Casa</h2>
-      <p>Praticar atividades leves, como alongamentos ou caminhadas, ajuda a manter a circulação e melhora o humor, sem precisar de equipamentos caros.</p>
+      <p>Pequenos movimentos diários ajudam a evitar dores musculares e melhoram a circulação sanguínea.</p>
     </section>
 
     <section id="agua">
-      <h2>Por que Beber Água é Essencial?</h2>
-      <p>A água transporta oxigênio e nutrientes para as células. Beber a quantidade correta por dia ajuda na digestão e mantém a pele jovem e saudável.</p>
+      <h2>Beber Água é Essencial</h2>
+      <p>A água é o principal componente do nosso corpo. Mantê-la em níveis ideais é a chave para a longevidade.</p>
     </section>
 
     <section id="magnesio">
-      <h2>Benefícios do Magnésio para Músculos e Mente</h2>
-      <p>O magnésio é um mineral essencial que ajuda no relaxamento muscular e na saúde mental. É um grande aliado para quem busca melhorar a qualidade do sono profundo.</p>
+      <h2>Benefícios do Magnésio</h2>
+      <p>O magnésio ajuda a relaxar os músculos e melhora significativamente a qualidade do sono profundo.</p>
     </section>
 
     <section id="curcuma">
-      <h2>Benefícios da Cúrcuma (Açafrão)</h2>
-      <p>A cúrcuma possui propriedades anti-inflamatórias poderosas que ajudam na saúde das articulações e no sistema digestivo.</p>
+      <h2>Cúrcuma: Anti-inflamatório Natural</h2>
+      <p>O açafrão-da-terra (cúrcuma) é excelente para diminuir inflamações e fortalecer o sistema digestivo.</p>
     </section>
 
     <section id="umidificador">
-      <h2>O Umidificador e sua Respiração</h2>
-      <p>O uso do umidificador ajuda a manter as vias respiratórias hidratadas, prevenindo crises de rinite e alergias em ambientes muito secos.</p>
+      <h2>Umidificador e a Saúde Respiratória</h2>
+      <p>Em dias secos, o umidificador evita o ressecamento das mucosas, facilitando a respiração durante a noite.</p>
     </section>
 
     <section id="oleoricino">
-      <h2>Óleo de Rícino: Força Natural</h2>
-      <p>O óleo de rícino fortalece os fios e estimula o crescimento natural tanto dos cabelos quanto das sobrancelhas.</p>
+      <h2>Óleo de Rícino: Força e Crescimento</h2>
+      <p>Ideal para hidratar e fortalecer fios quebradiços, estimulando um crescimento saudável.</p>
     </section>
 
     <section class="cta">
       <h2>Precisa de ajuda ou algum produto?</h2>
-      <p>Nossa equipe está pronta para te atender agora no WhatsApp!</p>
-      <a href="https://wa.me/556196592066" class="btn-whatsapp">Falar com Atacadão Farma Centro</a>
+      <a href="https://wa.me/556196592066" class="btn-whatsapp">Falar no WhatsApp</a>
     </section>
 
   </main>
   
   <footer>
-    <p>© 2026 Atacadão Farma Centro. Cuidando da sua saúde com carinho!</p>
+    <p>© 2026 Atacadão Farma Centro.</p>
   </footer>
 
 </body>
