@@ -7,188 +7,195 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      background: #f8f9fa;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(135deg, #008080, #20B2AA);
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .header-content h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    .header-content p {
-      margin: 10px 0;
-      font-style: italic;
-      font-size: 0.8em;
-    }
-    nav {
-      margin-top: 15px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: bold;
-      transition: color 0.3s, transform 0.2s;
-    }
-    nav a:hover {
-      color: #00BFFF;
-      transform: scale(1.1);
-    }
-    nav i {
-      margin-right: 5px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-    h2, h3 {
-      color: #008080;
-    }
-    a {
-      color: #00BFFF;
-    }
-    .post-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
-    .post-card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-      border: 1px solid #e0e0e0;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .post-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    }
-    .post-date {
-      font-size: 0.9em;
-      color: #777;
-    }
-    .read-more {
-      display: inline-block;
-      background: #00BFFF;
-      color: white;
-      padding: 8px 15px;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-    .cta {
-      text-align: center;
-      margin: 40px 0;
-      background: #e0f7fa;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    .btn {
-      background: #008080;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .btn:hover {
-      background: #006666;
-    }
-    footer {
-      background: #eee;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-      border-top: 1px solid #ddd;
-    }
-    @media (max-width: 768px) {
-      header {
-        padding: 20px;
-      }
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-      .post-list {
-        grid-template-columns: 1fr;
-      }
+    body { font-family: 'Roboto', sans-serif; margin: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+    
+    header { background: #009688; color: white; text-align: center; padding: 40px 20px; }
+    header h1 { margin: 0; font-size: 2.5em; font-weight: 700; }
+    header p { margin: 10px 0 20px; font-style: italic; font-size: 0.9em; opacity: 0.9; }
+    
+    nav { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: opacity 0.3s; display: flex; align-items: center; gap: 8px; }
+    nav a:hover { opacity: 0.7; }
+
+    .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+    .intro-text { text-align: center; margin-bottom: 40px; color: #555; }
+
+    .post-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 25px; margin-bottom: 50px; }
+    
+    .post-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 1px solid #eee; display: flex; flex-direction: column; }
+    .post-card h3 { color: #00796b; margin-top: 0; font-size: 1.4em; line-height: 1.3; }
+    .post-date { font-size: 0.85em; color: #aaa; margin: -10px 0 15px; }
+    .post-card p { color: #666; font-size: 1em; margin-bottom: 20px; flex-grow: 1; }
+    
+    .read-more { display: inline-block; background: #00b0ff; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; width: fit-content; transition: background 0.3s; }
+    .read-more:hover { background: #0081cb; }
+
+    section { background: white; padding: 40px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); scroll-margin-top: 20px; }
+    section h2 { color: #00796b; border-bottom: 2px solid #00b0ff; padding-bottom: 10px; margin-top: 0; }
+
+    .cta { text-align: center; margin: 50px 0; background: #e0f2f1; padding: 40px; border-radius: 12px; }
+    .btn-whatsapp { background: #00796b; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; font-size: 1.1em; }
+    
+    footer { background: #f1f1f1; text-align: center; padding: 25px; font-size: 0.9em; color: #777; border-top: 1px solid #ddd; }
+
+    @media (max-width: 768px) { 
+      .post-list { grid-template-columns: 1fr; }
+      header h1 { font-size: 1.8em; }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <div class="header-content">
+  <header>
     <h1>Blog Atacadão Farma Centro</h1>
     <p>Drogaria do Pericles</p>
-  </div>
-  <nav>
-    <a href="https://atacadaofarmacentro.github.io/atacadaofarmacentro/"><i class="fas fa-home"></i> Site Principal</a>
-    <a href="https://wa.me/556196592066?text=Olá!%20Vi%20no%20blog%20e%20quero%20mais%20dicas." target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-    <a href="https://www.instagram.com/farmacentro061/?igsh=MTZzNHo2cnZoNXBuZg%3D%3D" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-  </nav>
-</header>
+    <nav>
+      <a href="https://atacadaofarmacentro.github.io/atacadaofarmacentro/"><i class="fas fa-home"></i> Site Principal</a>
+      <a href="https://wa.me/556196592066" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.instagram.com/farmacentro061/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    </nav>
+  </header>
+  
+  <main class="container">
+    <p class="intro-text">Olá, clientes queridos! Aqui compartilhamos <strong>dicas de saúde práticas e confiáveis</strong> para melhorar seu dia a dia.</p>
 
-<main class="container">
+    <div class="post-list">
+      
+      <div class="post-card">
+        <h3>Estamos mais preguiçosos... ou apenas mentalmente sobrecarregados?</h3>
+        <p class="post-date">Janeiro / 2026</p>
+        <p>Não é preguiça. Não é TDAH. É excesso de informação. Hoje usamos calculadora, GPS e redes sociais para decidir tudo.</p>
+        <a href="#sobrecarga" class="read-more">Leia mais →</a>
+      </div>
 
-<p>Olá, clientes queridos! Aqui compartilhamos <strong>dicas de saúde práticas e confiáveis</strong> para melhorar seu dia a dia. Lembre-se: não substitui consulta médica.</p>
+      <div class="post-card">
+        <h3>Dica de Saúde: Goji Berry — Fortalece a Imunidade e Ajuda na Candidíase</h3>
+        <p class="post-date">26/10/2025</p>
+        <p>A frutinha poderosa rica em antioxidantes e vitamina C que ajuda na saúde intestinal e imunológica.</p>
+        <a href="#gojiberry" class="read-more">Leia mais →</a>
+      </div>
 
-<div class="post-list">
+      <div class="post-card">
+        <h3>Dica de Saúde: Os Benefícios das Vitaminas para o Seu Dia a Dia</h3>
+        <p class="post-date">09/08/2025</p>
+        <p>Energia, imunidade e bem-estar. Descubra como as vitaminas podem turbinar sua saúde!</p>
+        <a href="#vitaminas" class="read-more">Leia mais →</a>
+      </div>
 
-  <div class="post-card">
-    <h3>Dica de Saúde: Jejum de Informação — Desintoxicação Mental Digital</h3>
-    <p class="post-date">26/10/2025</p>
-    <p>Descubra como desconectar um pouco pode renovar sua mente e seu corpo!</p>
-    <a href="#jejuminfo" class="read-more">Leia mais →</a>
-  </div>
+      <div class="post-card">
+        <h3>Dica de Saúde: A Importância da Hidratação no Verão</h3>
+        <p class="post-date">10/08/2025</p>
+        <p>Evite problemas comuns no dia a dia. Aprenda a se manter hidratado corretamente.</p>
+        <a href="#hidratacao" class="read-more">Leia mais →</a>
+      </div>
 
-  <div class="post-card">
-    <h3>Dica de Saúde: Goji Berry — Fortalece a Imunidade e Ajuda na Candidíase</h3>
-    <p class="post-date">26/10/2025</p>
-    <p>A frutinha poderosa rica em antioxidantes e vitamina C.</p>
-    <a href="#gojiberry" class="read-more">Leia mais →</a>
-  </div>
+      <div class="post-card">
+        <h3>Dica de Saúde: Exercícios Simples em Casa</h3>
+        <p class="post-date">11/08/2025</p>
+        <p>Movimente-se sem sair de casa. Dicas práticas para manter o corpo ativo.</p>
+        <a href="#exercicios" class="read-more">Leia mais →</a>
+      </div>
 
-  <div class="post-card">
-    <h3>Dica de Saúde: Os Benefícios das Vitaminas</h3>
-    <p class="post-date">09/08/2025</p>
-    <p>Descubra como as vitaminas podem turbinar sua energia.</p>
-    <a href="#vitaminas" class="read-more">Leia mais →</a>
-  </div>
+      <div class="post-card">
+        <h3>Dica de Saúde: Por que Beber Água é Essencial</h3>
+        <p class="post-date">12/08/2025</p>
+        <p>Seu corpo agradece. Entenda como a água age em cada órgão do seu organismo.</p>
+        <a href="#agua" class="read-more">Leia mais →</a>
+      </div>
 
-</div>
+      <div class="post-card">
+        <h3>Dica de Saúde: Benefícios do Magnésio</h3>
+        <p class="post-date">13/08/2025</p>
+        <p>Importante para músculos e mente. Melhore seu sono e sua disposição diária.</p>
+        <a href="#magnesio" class="read-more">Leia mais →</a>
+      </div>
 
-<section id="jejuminfo">
-  <h2>Dica de Saúde: Jejum de Informação</h2>
-  <p>Reduz ansiedade, melhora o foco e ajuda no descanso mental.</p>
-</section>
+      <div class="post-card">
+        <h3>Dica de Saúde: Benefícios da Cúrcuma</h3>
+        <p class="post-date">14/08/2025</p>
+        <p>Poder anti-inflamatório natural. Conheça os segredos do açafrão-da-terra.</p>
+        <a href="#curcuma" class="read-more">Leia mais →</a>
+      </div>
 
-<section id="gojiberry">
-  <h2>Dica de Saúde: Goji Berry</h2>
-  <p>Rica em antioxidantes, fortalece a imunidade e o intestino.</p>
-</section>
+      <div class="post-card">
+        <h3>Dica de Saúde: A Importância do Umidificador em Casa</h3>
+        <p class="post-date">19/08/2025</p>
+        <p>Veja como um umidificador ajuda nas suas vias respiratórias e melhora o sono.</p>
+        <a href="#umidificador" class="read-more">Leia mais →</a>
+      </div>
 
-<section class="cta">
-  <h2>Precisa de ajuda? Fale conosco no WhatsApp</h2>
-  <a href="https://wa.me/556196592066" class="btn">Fale no WhatsApp</a>
-</section>
+      <div class="post-card">
+        <h3>Dica de Saúde: Óleo de Rícino para Cabelos e Sobrancelhas</h3>
+        <p class="post-date">25/08/2025</p>
+        <p>Cabelos e sobrancelhas mais fortes. Estimule o crescimento de forma natural.</p>
+        <a href="#oleoricino" class="read-more">Leia mais →</a>
+      </div>
 
-</main>
+    </div>
 
-<footer>
-  <p>© 2025 Atacadão Farma Centro. Cuide da sua saúde com a gente!</p>
-</footer>
+    <section id="sobrecarga">
+      <h2>Estamos mais preguiçosos... ou apenas sobrecarregados?</h2>
+      <p>Não é preguiça. Não é falta de vontade. É o excesso de estímulos. Hoje processamos mais informações em um dia do que nossos avós em um mês.</p>
+      <p>Essa sobrecarga faz o cérebro "travar". O segredo para recuperar a energia é simplificar as escolhas e reduzir o tempo de tela.</p>
+    </section>
+
+    <section id="gojiberry">
+      <h2>Dica de Saúde: Goji Berry — Fortalece a Imunidade e Ajuda na Candidíase</h2>
+      <p>A Goji Berry é riquíssima em vitamina C e antioxidantes. Ela ajuda a fortalecer as barreiras naturais do corpo e equilibra a flora, auxiliando no combate a fungos como a cândida.</p>
+      <p>A frutinha ajuda na saúde intestinal e imunológica de forma natural.</p>
+    </section>
+
+    <section id="vitaminas">
+      <h2>Os Benefícios das Vitaminas para o Seu Dia a Dia</h2>
+      <p>As vitaminas são fundamentais para turbinar sua energia e imunidade. Elas garantem o bem-estar e o bom funcionamento de todos os sistemas do corpo.</p>
+    </section>
+
+    <section id="hidratacao">
+      <h2>A Importância da Hidratação no Verão</h2>
+      <p>Manter-se hidratado evita problemas comuns como dores de cabeça e cansaço excessivo. No verão, a reposição de líquidos deve ser constante para manter o equilíbrio do organismo.</p>
+    </section>
+
+    <section id="exercicios">
+      <h2>Exercícios Simples em Casa</h2>
+      <p>Praticar atividades leves, como alongamentos ou caminhadas, ajuda a manter a circulação e melhora o humor, sem precisar de equipamentos caros.</p>
+    </section>
+
+    <section id="agua">
+      <h2>Por que Beber Água é Essencial?</h2>
+      <p>A água transporta oxigênio e nutrientes para as células. Beber a quantidade correta por dia ajuda na digestão e mantém a pele jovem e saudável.</p>
+    </section>
+
+    <section id="magnesio">
+      <h2>Benefícios do Magnésio para Músculos e Mente</h2>
+      <p>O magnésio é um mineral essencial que ajuda no relaxamento muscular e na saúde mental. É um grande aliado para quem busca melhorar a qualidade do sono profundo.</p>
+    </section>
+
+    <section id="curcuma">
+      <h2>Benefícios da Cúrcuma (Açafrão)</h2>
+      <p>A cúrcuma possui propriedades anti-inflamatórias poderosas que ajudam na saúde das articulações e no sistema digestivo.</p>
+    </section>
+
+    <section id="umidificador">
+      <h2>O Umidificador e sua Respiração</h2>
+      <p>O uso do umidificador ajuda a manter as vias respiratórias hidratadas, prevenindo crises de rinite e alergias em ambientes muito secos.</p>
+    </section>
+
+    <section id="oleoricino">
+      <h2>Óleo de Rícino: Força Natural</h2>
+      <p>O óleo de rícino fortalece os fios e estimula o crescimento natural tanto dos cabelos quanto das sobrancelhas.</p>
+    </section>
+
+    <section class="cta">
+      <h2>Precisa de ajuda ou algum produto?</h2>
+      <p>Nossa equipe está pronta para te atender agora no WhatsApp!</p>
+      <a href="https://wa.me/556196592066" class="btn-whatsapp">Falar com Atacadão Farma Centro</a>
+    </section>
+
+  </main>
+  
+  <footer>
+    <p>© 2026 Atacadão Farma Centro. Cuidando da sua saúde com carinho!</p>
+  </footer>
 
 </body>
 </html>
