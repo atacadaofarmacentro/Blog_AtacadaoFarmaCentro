@@ -16,17 +16,19 @@
     nav a:hover { color: #00BFFF; transform: scale(1.1); }
     nav i { margin-right: 5px; }
     .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
-    h2, h3 { color: #008080; }
+    h2, h3 { color: #008080; border-bottom: 2px solid #20B2AA; padding-bottom: 5px; margin-top: 40px; }
     a { color: #00BFFF; }
-    .post-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .post-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 50px; }
     .post-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: 1px solid #e0e0e0; transition: transform 0.3s, box-shadow 0.3s; }
     .post-card:hover { transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
     .post-date { font-size: 0.9em; color: #777; }
-    .read-more { display: inline-block; background: #00BFFF; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; }
-    .cta { text-align: center; margin: 40px 0; background: #e0f7fa; padding: 20px; border-radius: 10px; }
-    .btn { background: #008080; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    .read-more { display: inline-block; background: #00BFFF; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; margin-top: 10px; }
+    .read-more:hover { background: #008fb3; }
+    section { background: white; padding: 25px; border-radius: 10px; margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    .cta { text-align: center; margin: 40px 0; background: #e0f7fa; padding: 20px; border-radius: 10px; border: none; }
+    .btn { background: #008080; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; display: inline-block; }
     .btn:hover { background: #006666; }
-    footer { background: #eee; text-align: center; padding: 15px; font-size: 0.9em; border-top: 1px solid #ddd; }
+    footer { background: #eee; text-align: center; padding: 15px; font-size: 0.9em; border-top: 1px solid #ddd; margin-top: 50px; }
     @media (max-width: 768px) { header { padding: 20px; } nav a { display: block; margin: 10px 0; } .post-list { grid-template-columns: 1fr; } }
   </style>
 </head>
@@ -37,137 +39,113 @@
       <p>Drogaria do Pericles</p>
     </div>
     <nav>
-      <a href="https://atacadaofarmacentro.github.io/atacadaofarmacentro/"><i class="fas fa-home"></i> Site Principal</a>
+      <a href="#"><i class="fas fa-home"></i> Home</a>
       <a href="https://wa.me/556196592066?text=Olá!%20Vi%20no%20blog%20e%20quero%20mais%20dicas." target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-      <a href="https://www.instagram.com/farmacentro061/?igsh=MTZzNHo2cnZoNXBuZg%3D%3D" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://www.instagram.com/farmacentro061/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
     </nav>
   </header>
   
   <main class="container">
-    <p>Olá, clientes queridos! Aqui compartilhamos <strong>dicas de saúde práticas e confiáveis</strong> para melhorar seu dia a dia. Lembre-se: não substitui consulta médica.</p>
+    <p>Olá, clientes queridos! Aqui compartilhamos <strong>dicas de saúde práticas e confiáveis</strong>. Lembre-se: não substitui consulta médica.</p>
 
     <div class="post-list">
-
       <div class="post-card">
-        <h3>Dica de Saúde: Jejum de Informação — Desintoxicação Mental Digital</h3>
+        <h3>Jejum de Informação</h3>
         <p class="post-date">26/10/2025</p>
-        <p>Descubra como desconectar um pouco pode renovar sua mente e seu corpo!</p>
+        <p>Descubra como desconectar um pouco pode renovar sua mente!</p>
         <a href="#jejuminfo" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
-        <h3>Dica de Saúde: Goji Berry — Fortalece a Imunidade e Ajuda na Candidíase</h3>
+        <h3>Goji Berry e Imunidade</h3>
         <p class="post-date">26/10/2025</p>
-        <p>A frutinha poderosa rica em antioxidantes e vitamina C que ajuda na saúde intestinal e imunológica.</p>
+        <p>A frutinha poderosa rica em antioxidantes e vitamina C.</p>
         <a href="#gojiberry" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
-        <h3>Dica de Saúde: Os Benefícios das Vitaminas para o Seu Dia a Dia</h3>
+        <h3>Benefícios das Vitaminas</h3>
         <p class="post-date">09/08/2025</p>
-        <p>Descubra como as vitaminas podem turbinar sua energia e imunidade!</p>
+        <p>Turbine sua energia e imunidade com os nutrientes certos!</p>
         <a href="#vitaminas" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
-        <h3>Dica de Saúde: A Importância da Hidratação no Verão</h3>
+        <h3>Hidratação no Verão</h3>
         <p class="post-date">10/08/2025</p>
-        <p>Aprenda a se manter hidratado e evite problemas comuns!</p>
+        <p>Aprenda a se manter hidratado e evite problemas comuns.</p>
         <a href="#hidratacao" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
-        <h3>Dica de Saúde: Exercícios Simples para Manter a Forma em Casa</h3>
-        <p class="post-date">11/08/2025</p>
-        <p>Comece hoje com rotinas fáceis e eficazes!</p>
-        <a href="#exercicios" class="read-more">Leia mais →</a>
-      </div>
-
-      <div class="post-card">
-        <h3>Dica de Saúde: Por que Beber Água é Essencial para Sua Saúde</h3>
-        <p class="post-date">12/08/2025</p>
-        <p>Saiba como a água mantém seu corpo funcionando perfeitamente!</p>
-        <a href="#agua" class="read-more">Leia mais →</a>
-      </div>
-
-      <div class="post-card">
-        <h3>Dica de Saúde: Os Benefícios do Magnésio para a Saúde</h3>
-        <p class="post-date">13/08/2025</p>
-        <p>Descubra como o magnésio pode melhorar sua vida!</p>
-        <a href="#magnesio" class="read-more">Leia mais →</a>
-      </div>
-
-      <div class="post-card">
-        <h3>Dica de Saúde: Os Benefícios da Cúrcuma (Açafrão-da-Terra)</h3>
-        <p class="post-date">14/08/2025</p>
-        <p>Conheça os efeitos anti-inflamatórios e antioxidantes poderosos!</p>
-        <a href="#curcuma" class="read-more">Leia mais →</a>
-      </div>
-
-      <div class="post-card">
-        <h3>Dica de Saúde: A Importância do Umidificador em Casa</h3>
+        <h3>Umidificador em Casa</h3>
         <p class="post-date">19/08/2025</p>
-        <p>Veja como um umidificador ajuda nas vias respiratórias!</p>
+        <p>Veja como ele ajuda suas vias respiratórias no tempo seco.</p>
         <a href="#umidificador" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
-        <h3>Dica de Saúde: Óleo de Rícino para Cabelos e Sobrancelhas</h3>
+        <h3>Óleo de Rícino</h3>
         <p class="post-date">25/08/2025</p>
         <p>Fortalece os fios e estimula o crescimento natural.</p>
         <a href="#oleoricino" class="read-more">Leia mais →</a>
       </div>
-
     </div>
 
     <section id="jejuminfo">
       <h2>Dica de Saúde: Jejum de Informação — Desintoxicação Mental Digital</h2>
-      <p>Você já ouviu falar em <strong>jejum de informação</strong>? ...</p>
+      <p>Você já ouviu falar em <strong>jejum de informação</strong>? Em um mundo hiperconectado, dar uma pausa nas telas é vital.</p>
       <ul>
         <li>Reduz ansiedade e fadiga mental.</li>
-        <li>Melhora o sono e o foco.</li>
-        <li>Aumenta a criatividade.</li>
+        <li>Melhora a qualidade do sono e o foco.</li>
+        <li>Aumenta a criatividade e a presença no agora.</li>
       </ul>
       <p><em>Consulte um profissional quando necessário.</em></p>
     </section>
 
     <section id="gojiberry">
-      <h2>Dica de Saúde: Goji Berry — A Frutinha Poderosa que Fortalece sua Imunidade</h2>
+      <h2>Dica de Saúde: Goji Berry — Fortalece a Imunidade e Ajuda na Candidíase</h2>
+      <p>A Goji Berry é riquíssima em vitamina C e antioxidantes. Ela ajuda a fortalecer as barreiras naturais do corpo e equilibrar a flora, auxiliando no combate a fungos como a cândida.</p>
+      <p><strong>Como usar:</strong> Uma colher de sopa por dia em sucos, iogurtes ou pura.</p>
+    </section>
 
-      <p>A <strong>Goji Berry</strong> é um dos alimentos mais nutritivos do mundo, rica em antioxidantes, vitaminas e minerais que fortalecem o corpo e ajudam no equilíbrio intestinal e imunológico.</p>
+    <section id="vitaminas">
+      <h2>Dica de Saúde: Os Benefícios das Vitaminas para o Seu Dia a Dia</h2>
+      <p>As vitaminas são essenciais para o metabolismo. A Vitamina D ajuda nos ossos, a C na imunidade e o complexo B na energia mental.</p>
+      <p><strong>Dica:</strong> Mantenha uma alimentação colorida e, se precisar suplementar, fale conosco!</p>
+    </section>
 
-      <h3>🍒 Benefícios da Goji Berry</h3>
+    <section id="hidratacao">
+      <h2>Dica de Saúde: A Importância da Hidratação no Verão</h2>
+      <p>No calor, perdemos muitos líquidos pelo suor. A desidratação causa tontura, dor de cabeça e cansaço extremo.</p>
       <ul>
-        <li>Rica em vitamina C e antioxidantes potentes.</li>
-        <li>Fortalece o sistema imunológico.</li>
-        <li>Melhora o funcionamento do intestino devido às fibras.</li>
-        <li>Ajuda a controlar glicemia.</li>
-        <li>Aumenta energia, bem-estar e disposição.</li>
+        <li>Beba pelo menos 2 litros de água por dia.</li>
+        <li>Consuma frutas ricas em água como melancia e abacaxi.</li>
       </ul>
+    </section>
 
-      <h3>🦠 Goji Berry e Candidíase</h3>
-      <p>A candidíase aparece quando a imunidade cai ou o intestino fica desequilibrado. A Goji Berry ajuda porque:</p>
-      <ul>
-        <li><strong>Fortalece a imunidade:</strong> vitamina C e zinco ajudam o corpo a combater fungos.</li>
-        <li><strong>Equilibra a flora intestinal:</strong> essencial para prevenir crises repetidas.</li>
-        <li><strong>Ação anti-inflamatória:</strong> reduz irritações e melhora o bem-estar.</li>
-      </ul>
+    <section id="umidificador">
+      <h2>Dica de Saúde: A Importância do Umidificador em Casa</h2>
+      <p>O ar seco irrita as mucosas do nariz e garganta. O umidificador ajuda a manter a umidade ideal (entre 40% e 60%), facilitando a respiração e melhorando o sono.</p>
+      <p><strong>Cuidado:</strong> Mantenha o aparelho sempre limpo para evitar fungos.</p>
+    </section>
 
-      <h3>📌 Como consumir</h3>
-      <p>Consuma 1 a 2 colheres de sopa por dia, pura ou misturada com iogurte, vitaminas, água ou frutas.</p>
-
-      <p><em>(Não substitui tratamento médico. Procure orientação profissional se necessário.)</em></p>
+    <section id="oleoricino">
+      <h2>Dica de Saúde: Óleo de Rícino para Cabelos e Sobrancelhas</h2>
+      <p>Conhecido por suas propriedades hidratantes e fortalecedoras, o óleo de rícino estimula a circulação no couro cabeludo, ajudando os fios a crescerem mais fortes.</p>
+      <p><strong>Como usar:</strong> Massageie algumas gotas na raiz e deixe agir por 30 minutos antes de lavar.</p>
     </section>
 
     <section class="cta">
-      <h2>Precisa de ajuda? Fale conosco no WhatsApp</h2>
-      <a href="https://wa.me/556196592066" class="btn">Fale no WhatsApp</a>
+      <h2>Precisa de ajuda ou produtos?</h2>
+      <p>Fale agora mesmo com nossa equipe pelo WhatsApp!</p>
+      <a href="https://wa.me/556196592066" class="btn">Chamar no WhatsApp</a>
     </section>
 
   </main>
   
   <footer>
-    <p>© 2025 Atacadão Farma Centro. Cuide da sua saúde com a gente!</p>
+    <p>© 2025 Atacadão Farma Centro. Cuidando da sua saúde todos os dias!</p>
   </footer>
 
 </body>
