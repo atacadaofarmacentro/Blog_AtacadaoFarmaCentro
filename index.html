@@ -4,121 +4,193 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog Atacadão Farma Centro</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <style>
-    body { font-family: 'Roboto', sans-serif; margin: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
-    header { background: linear-gradient(135deg, #008080, #20B2AA); color: white; text-align: center; padding: 30px 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-    .header-content h1 { margin: 0; font-size: 2.5em; }
-    .header-content p { margin: 10px 0; font-style: italic; font-size: 0.8em; }
-    nav { margin-top: 15px; }
-    nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
-    .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
-    h2, h3 { color: #008080; }
-    .post-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-    .post-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-    .post-date { font-size: 0.9em; color: #777; }
-    .read-more { display: inline-block; background: #00BFFF; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; }
-    footer { background: #eee; text-align: center; padding: 15px; font-size: 0.9em; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #008080, #20B2AA);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2, h3 {
+      color: #008080;
+      margin-top: 40px;
+    }
+
+    .post-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+
+    .post-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .post-date {
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      background: #00BFFF;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    section {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      margin-bottom: 50px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 
 <body>
 
 <header>
-  <div class="header-content">
-    <h1>Blog Atacadão Farma Centro</h1>
-    <p>Drogaria do Pericles</p>
-  </div>
+  <h1>Blog Atacadão Farma Centro</h1>
+  <p>Drogaria do Pericles</p>
+
   <nav>
-    <a href="https://atacadaofarmacentro.github.io/atacadaofarmacentro/">🏠 Site Principal</a>
-    <a href="https://wa.me/556196592066" target="_blank">📲 WhatsApp</a>
-    <a href="https://www.instagram.com/farmacentro061/" target="_blank">📸 Instagram</a>
+    <a href="https://atacadaofarmacentro.github.io/atacadaofarmacentro/">Site</a>
+    <a href="https://wa.me/556196592066">WhatsApp</a>
+    <a href="https://www.instagram.com/farmacentro061/">Instagram</a>
   </nav>
 </header>
 
 <main class="container">
 
-  <p>Olá! Aqui compartilhamos <strong>dicas de saúde, bem-estar e reflexões importantes</strong> para o dia a dia.  
-  Este conteúdo não substitui avaliação profissional.</p>
-
   <!-- LISTA DE POSTS -->
   <div class="post-list">
 
     <div class="post-card">
-      <h3>Reflexão: Estamos mais preguiçosos ou mentalmente sobrecarregados?</h3>
-      <p class="post-date">03/01/2026</p>
-      <p>O excesso de informação está mudando a forma como pensamos, escolhemos e vivemos.</p>
-      <a href="#sobrecargamental" class="read-more">Leia mais →</a>
+      <h3>Jejum de Informação — Desintoxicação Mental Digital</h3>
+      <p class="post-date">26/10/2025</p>
+      <p>Reduza ansiedade, melhore o foco e cuide da mente.</p>
+      <a href="#jejuminfo" class="read-more">Leia mais →</a>
     </div>
 
     <div class="post-card">
-      <h3>Dica de Saúde: Goji Berry — Fortalece a Imunidade</h3>
-      <p class="post-date">26/10/2025</p>
-      <p>A frutinha rica em antioxidantes que ajuda no equilíbrio do corpo.</p>
-      <a href="#gojiberry" class="read-more">Leia mais →</a>
+      <h3>Estamos mais preguiçosos ou sobrecarregados?</h3>
+      <p class="post-date">03/01/2026</p>
+      <p>Uma reflexão sobre excesso de informação e saúde mental.</p>
+      <a href="#sobrecargamental" class="read-more">Leia mais →</a>
     </div>
 
   </div>
 
-  <!-- NOVO POST COMPLETO -->
-  <section id="sobrecargamental">
-    <h2>Estamos mais preguiçosos… ou apenas sobrecarregados?</h2>
-
-    <p>
-      Não, não é que todo mundo tenha TDAH.  
-      Também não é falta de força de vontade.
-    </p>
-
-    <p>
-      O que estamos vivendo é uma <strong>sobrecarga diária de informações desnecessárias</strong>.
-      Isso está nos deixando cansados, distraídos e cada vez mais dependentes.
-    </p>
-
-    <p>
-      Hoje não fazemos contas sem calculadora, vamos na esquina usando GPS,
-      escolhemos roupas pela internet e até nossos gostos são influenciados por tendências.
-    </p>
-
-    <h3>Quando a praticidade vira dependência</h3>
-    <p>
-      A tecnologia ajuda, mas quando tudo é automático o cérebro deixa de ser exercitado.
-      Pensar, escolher e errar exige esforço — e estamos evitando isso.
-    </p>
-
-    <h3>Estamos perdendo nossa própria opinião</h3>
-    <p>
-      Quando tudo é sugerido, esquecemos de nos perguntar:
-      <em>o que eu realmente gosto?</em>
-    </p>
-
-    <h3>O que fazer diferente para cuidar da saúde mental?</h3>
+  <!-- POST JEJUM -->
+  <section id="jejuminfo">
+    <h2>Jejum de Informação — Desintoxicação Mental Digital</h2>
+    <p>Vivemos conectados o tempo todo. O jejum de informação ajuda a mente a descansar.</p>
     <ul>
-      <li>Faça contas simples de cabeça.</li>
-      <li>Ande sem GPS quando possível.</li>
-      <li>Escolha suas roupas sozinho.</li>
-      <li>Crie momentos sem celular.</li>
-      <li>Durma bem, se alimente melhor e se movimente.</li>
+      <li>Reduz ansiedade</li>
+      <li>Melhora foco e memória</li>
+      <li>Ajuda no sono</li>
+    </ul>
+    <p><em>Não substitui acompanhamento profissional.</em></p>
+  </section>
+
+  <!-- NOVO POST – AGORA DO JEITO CERTO -->
+  <section id="sobrecargamental">
+    <h2>Estamos mais preguiçosos… ou mentalmente sobrecarregados?</h2>
+
+    <p>
+      Não é preguiça.  
+      Também não é que todo mundo tenha TDAH.
+    </p>
+
+    <p>
+      O que vivemos hoje é uma <strong>sobrecarga constante de informações</strong>.  
+      Conteúdos, notificações, opiniões, tendências e decisões prontas o tempo todo.
+    </p>
+
+    <p>
+      Não fazemos contas sem calculadora, usamos GPS até para ir na esquina e escolhemos roupas com base em vídeos.
+      Aos poucos, estamos terceirizando o pensamento.
+    </p>
+
+    <h3>Quando a facilidade vira dependência</h3>
+    <p>
+      A tecnologia facilita, mas também nos deixa mentalmente passivos.
+      Pensar dá trabalho — e o cérebro aprende a evitar esforço.
+    </p>
+
+    <h3>O impacto na saúde mental</h3>
+    <ul>
+      <li>Ansiedade constante</li>
+      <li>Dificuldade de concentração</li>
+      <li>Cansaço mental mesmo sem esforço físico</li>
+      <li>Perda da própria opinião</li>
+    </ul>
+
+    <h3>O que fazer diferente?</h3>
+    <ul>
+      <li>Faça contas simples de cabeça</li>
+      <li>Caminhe sem GPS de vez em quando</li>
+      <li>Escolha suas roupas sem internet</li>
+      <li>Tenha momentos sem celular</li>
+      <li>Durma melhor e se movimente</li>
     </ul>
 
     <p>
-      Cuidar da saúde mental hoje é, muitas vezes,
-      <strong>voltar ao simples</strong> e confiar mais na própria mente.
+      Cuidar da saúde mental hoje é, muitas vezes, <strong>voltar ao simples</strong>.
     </p>
 
-    <p><em>Conteúdo informativo. Não substitui acompanhamento profissional.</em></p>
-  </section>
-
-  <!-- GOJI BERRY -->
-  <section id="gojiberry">
-    <h2>Goji Berry — A Frutinha Poderosa</h2>
-    <p>Rica em antioxidantes, fortalece a imunidade e melhora o bem-estar.</p>
+    <p><em>Conteúdo informativo. Procure um profissional se necessário.</em></p>
   </section>
 
 </main>
 
 <footer>
-  <p>© 2026 Atacadão Farma Centro — Cuidando de você todos os dias 💚</p>
+  © 2026 Atacadão Farma Centro — Cuidando da sua saúde todos os dias 💚
 </footer>
 
 </body>
