@@ -4,28 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog Atacadão Farma Centro</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <style>
-    body { font-family: 'Roboto', sans-serif; margin: 0; background: #f8f9fa; color: #333; line-height: 1.7; }
-    header { background: linear-gradient(135deg, #008080, #20B2AA); color: white; text-align: center; padding: 30px 20px; }
-    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+    body { font-family: 'Roboto', sans-serif; margin: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
+    header { background: linear-gradient(135deg, #008080, #20B2AA); color: white; text-align: center; padding: 30px 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .header-content h1 { margin: 0; font-size: 2.5em; }
+    .header-content p { margin: 10px 0; font-style: italic; font-size: 0.8em; }
+    nav { margin-top: 15px; }
+    nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
     .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
-    h2, h3 { color: #008080; margin-top: 40px; }
-    ul { margin-left: 20px; }
-    li { margin-bottom: 8px; }
-    section { background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 40px; }
-    footer { background: #eee; text-align: center; padding: 15px; font-size: 0.9em; }
+    h2, h3 { color: #008080; }
+    .post-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .post-card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+    .post-date { font-size: 0.9em; color: #777; }
+    .read-more { display: inline-block; background: #00BFFF; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; }
+    .cta { text-align: center; margin: 40px 0; background: #e0f7fa; padding: 20px; border-radius: 10px; }
+    .btn { background: #008080; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    footer { background: #eee; text-align: center; padding: 15px; font-size: 0.9em; border-top: 1px solid #ddd; }
+    @media (max-width: 768px) { nav a { display: block; margin: 10px 0; } }
   </style>
 </head>
 
 <body>
 
 <header>
-  <h1>Blog Atacadão Farma Centro</h1>
-  <p>Dicas reais para saúde, mente e bem-estar</p>
+  <div class="header-content">
+    <h1>Blog Atacadão Farma Centro</h1>
+    <p>Drogaria do Pericles</p>
+  </div>
   <nav>
-    <a href="https://atacadaofarmacentro.github.io/atacadaofarmacentro/">Site</a>
+    <a href="https://atacadaofarmacentro.github.io/atacadaofarmacentro/">Site Principal</a>
     <a href="https://wa.me/556196592066">WhatsApp</a>
     <a href="https://www.instagram.com/farmacentro061/">Instagram</a>
   </nav>
@@ -33,50 +44,110 @@
 
 <main class="container">
 
-  <!-- NOVA DICA -->
-  <section id="sobrecargamental">
+<p>Olá, clientes queridos! Aqui compartilhamos <strong>dicas de saúde práticas e confiáveis</strong> para o seu dia a dia.</p>
 
-    <h2>Estamos mais preguiçosos… ou apenas mentalmente sobrecarregados?</h2>
+<div class="post-list">
 
-    <p><strong>Não, não é que todo mundo tenha TDAH.</strong><br>
-    Também não é falta de força de vontade.</p>
+<div class="post-card">
+  <h3>Estamos mais preguiçosos… ou apenas mentalmente sobrecarregados?</h3>
+  <p class="post-date">Janeiro / 2026</p>
+  <p>Não é preguiça. Não é TDAH. É excesso de informação.</p>
+  <a href="#sobrecarga" class="read-more">Leia mais →</a>
+</div>
 
-    <p>O que estamos vivendo é algo muito mais silencioso e coletivo: uma <strong>sobrecarga diária de informações desnecessárias</strong>.</p>
+<div class="post-card">
+  <h3>Jejum de Informação — Desintoxicação Mental Digital</h3>
+  <p class="post-date">26/10/2025</p>
+  <p>Descubra como desconectar pode renovar sua mente.</p>
+  <a href="#jejuminfo" class="read-more">Leia mais →</a>
+</div>
 
-    <p>Notícias, notificações, opiniões, tendências, vídeos curtos, comparações constantes.<br>
-    Tudo ao mesmo tempo. Todos os dias.</p>
+<div class="post-card">
+  <h3>Goji Berry — Fortalece a Imunidade</h3>
+  <p class="post-date">26/10/2025</p>
+  <p>Rica em antioxidantes e vitamina C.</p>
+  <a href="#gojiberry" class="read-more">Leia mais →</a>
+</div>
 
-    <p>E isso está nos deixando cansados, distraídos e, sim, cada vez mais dependentes.</p>
+<div class="post-card">
+  <h3>Os Benefícios das Vitaminas</h3>
+  <p class="post-date">09/08/2025</p>
+  <p>Energia, imunidade e bem-estar.</p>
+  <a href="#vitaminas" class="read-more">Leia mais →</a>
+</div>
 
-    <h3>📌 O dia a dia virou piloto automático</h3>
+<div class="post-card">
+  <h3>A Importância da Hidratação</h3>
+  <p class="post-date">10/08/2025</p>
+  <p>Evite problemas comuns no dia a dia.</p>
+  <a href="#hidratacao" class="read-more">Leia mais →</a>
+</div>
 
-    <p>Observe a rotina atual:</p>
+<div class="post-card">
+  <h3>Exercícios Simples em Casa</h3>
+  <p class="post-date">11/08/2025</p>
+  <p>Movimente-se sem sair de casa.</p>
+  <a href="#exercicios" class="read-more">Leia mais →</a>
+</div>
 
-    <ul>
-      <li>Não fazemos contas simples sem calculadora</li>
-      <li>Vamos na esquina usando GPS</li>
-      <li>Escolhemos roupas vendo vídeos</li>
-      <li>Decidimos o que gostar com base no TikTok</li>
-      <li>Pedimos para a internet opinar antes mesmo de ouvir nossa própria intuição</li>
-    </ul>
+<div class="post-card">
+  <h3>Por que Beber Água é Essencial</h3>
+  <p class="post-date">12/08/2025</p>
+  <p>Seu corpo agradece.</p>
+  <a href="#agua" class="read-more">Leia mais →</a>
+</div>
 
-    <p>Sem perceber, estamos <strong>terceirizando o pensamento</strong>.</p>
+<div class="post-card">
+  <h3>Benefícios do Magnésio</h3>
+  <p class="post-date">13/08/2025</p>
+  <p>Importante para músculos e mente.</p>
+  <a href="#magnesio" class="read-more">Leia mais →</a>
+</div>
 
-    <p>Aos poucos, deixamos de exercitar habilidades básicas: atenção, memória, senso crítico e até o prazer de escolher por nós mesmos.</p>
+<div class="post-card">
+  <h3>Benefícios da Cúrcuma</h3>
+  <p class="post-date">14/08/2025</p>
+  <p>Poder anti-inflamatório natural.</p>
+  <a href="#curcuma" class="read-more">Leia mais →</a>
+</div>
 
-    <p><strong>O problema não é a tecnologia.</strong><br>
-    O problema é usar tudo o tempo todo, sem pausa.</p>
+<div class="post-card">
+  <h3>Óleo de Rícino</h3>
+  <p class="post-date">25/08/2025</p>
+  <p>Cabelos e sobrancelhas mais fortes.</p>
+  <a href="#oleoricino" class="read-more">Leia mais →</a>
+</div>
 
-    <h3>⚠️ Quando a praticidade vira dependência</h3>
+</div>
 
-    <p>A tecnologia foi criada para facilitar a vida — e conseguiu.</p>
+<section id="sobrecarga">
+<h2>Estamos mais preguiçosos… ou apenas sobrecarregados?</h2>
+<p>Não é preguiça. É excesso de estímulos, opiniões e informações.</p>
+<p>Hoje usamos calculadora, GPS, vídeos e redes sociais para decidir tudo.</p>
+<p>O cérebro cansa, perde foco e identidade.</p>
+<p>Cuidar da saúde mental é voltar ao simples.</p>
+</section>
 
-    <p>Mas quando tudo é automático, o cérebro entra em <strong>modo economia de energia</strong>.</p>
+<section id="jejuminfo">
+<h2>Jejum de Informação</h2>
+<p>Desconectar um pouco ajuda a mente a se reorganizar.</p>
+</section>
 
-    <p>Pensar dá trabalho.<br>
-    Escolher cansa.<br>
-    Errar ensina, mas dói.</p>
+<section id="gojiberry">
+<h2>Goji Berry</h2>
+<p>Antioxidante natural que fortalece a imunidade.</p>
+</section>
 
-    <p>Então buscamos atalhos.</p>
+<section class="cta">
+<h2>Precisa de ajuda?</h2>
+<a href="https://wa.me/556196592066" class="btn">Fale no WhatsApp</a>
+</section>
 
-    <p>O resul
+</main>
+
+<footer>
+<p>© 2025 Atacadão Farma Centro</p>
+</footer>
+
+</body>
+</html>
