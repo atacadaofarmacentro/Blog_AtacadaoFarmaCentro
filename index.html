@@ -24,7 +24,8 @@
     .btn-channel { background: #00b0ff; color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 10px rgba(0,176,255,0.3); transition: transform 0.2s; }
     .btn-channel:hover { transform: scale(1.05); background: #0081cb; }
 
-    .post-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-bottom: 50px; }
+    /* Ajuste para aceitar infinitos posts sem quebrar o layout */
+    .post-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 50px; }
     .post-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 1px solid #eee; display: flex; flex-direction: column; }
     .post-card h3 { color: #00796b; margin-top: 0; font-size: 1.4em; line-height: 1.3; }
     .post-date { font-size: 0.85em; color: #aaa; margin: -10px 0 15px; }
@@ -72,93 +73,91 @@
 
     <div class="post-list">
       <div class="post-card">
+        <h3>As fibras podem ajudar a emagrecer?</h3>
+        <p class="post-date">22/01/2026</p>
+        <p>Muitas vezes negligenciada, a fibra pode ser o "ingrediente secreto" para o sucesso na perda de peso e controle da insulina.</p>
+        <a href="#fibras-emagrecer" class="read-more">Leia mais →</a>
+      </div>
+
+      <div class="post-card">
         <h3>Tecnologia e Saúde: Bluetooth e Micro-ondas</h3>
         <p class="post-date">22/01/2026</p>
-        <p>Entenda o que a ciência diz sobre a segurança dos fones Bluetooth e dos fornos de micro-ondas no seu dia a dia.</p>
+        <p>Entenda o que a ciência diz sobre a segurança dos fones sem fio e dos fornos no seu dia a dia.</p>
         <a href="#tecnologia-saude" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
-        <h3>Alerta: Conservantes e Riscos de Câncer e Diabetes</h3>
+        <h3>Alerta: Conservantes e Riscos de Doenças</h3>
         <p class="post-date">21/01/2026</p>
-        <p>Novos dados de um grande estudo francês relacionam o consumo de certos aditivos alimentares ao aumento de doenças graves.</p>
+        <p>Consumo de certos aditivos alimentares está sendo relacionado ao aumento de casos de câncer e diabetes.</p>
         <a href="#conservantes" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
-        <h3>Medicamento brasileiro traz esperança para paraplégicos</h3>
+        <h3>Esperança para Paraplégicos: Ciência BR</h3>
         <p class="post-date">15/01/2026</p>
-        <p>A polilaminina, desenvolvida na UFRJ, apresenta resultados promissores na regeneração da medula espinhal.</p>
+        <p>Polilaminina, desenvolvida na UFRJ, traz resultados promissores na regeneração da medula.</p>
         <a href="#polilaminina" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
-        <h3>'Janeiro Seco': Um mês sem álcool faz diferença</h3>
+        <h3>Janeiro Seco: Benefícios Reais</h3>
         <p class="post-date">20/01/2026</p>
-        <p>Um novo estudo confirma que a abstinência de álcool por apenas um mês oferece melhorias reais.</p>
+        <p>O que acontece com seu corpo após 30 dias sem álcool? Spoiler: Faz muita diferença!</p>
         <a href="#janeiro-seco" class="read-more">Leia mais →</a>
+      </div>
+
+      <div class="post-card">
+        <h3>Adoçantes e o Envelhecimento Cerebral</h3>
+        <p class="post-date">19/01/2026</p>
+        <p>Pesquisas discutem se alternativas ao açúcar podem afetar nossa memória a longo prazo.</p>
+        <a href="#adocantes" class="read-more">Leia mais →</a>
       </div>
     </div>
 
+    <section id="fibras-emagrecer">
+      <h2>As fibras podem ajudar a emagrecer? Nutricionista responde.</h2>
+      <p>Muitas pessoas focam apenas em proteínas e gorduras, mas a fibra é frequentemente negligenciada. Ela é crucial não apenas para a digestão, mas para a saúde do coração e o controle do peso.</p>
+      
+      <div class="highlight-box">
+        "Menos de 5% da população atinge a meta diária de fibras (34g para homens e 28g para mulheres). A fibra é considerada por muitos como o 'Ozempic da natureza'."
+      </div>
+
+      <h3>Por que as fibras ajudam?</h3>
+      <ul>
+        <li><strong>Controle de Peso:</strong> Promovem saciedade, fazendo você se sentir cheio por mais tempo.</li>
+        <li><strong>Insulina:</strong> Aumentam a sensibilidade à insulina, essencial para quem tem risco de diabetes.</li>
+        <li><strong>Saúde Cardíaca:</strong> Reduzem o colesterol LDL e a pressão arterial.</li>
+      </ul>
+
+      <h3>Dicas de Alimentos Ricos em Fibras:</h3>
+      <ul>
+        <li><strong>Frutas Vermelhas Congeladas:</strong> Práticas e acessíveis, ótimas para smoothies ou iogurte.</li>
+        <li><strong>Macarrão Integral:</strong> Tem significativamente mais fibra que o macarrão branco (diferente do arroz integral, que tem apenas 1g a mais que o branco).</li>
+        <li><strong>Sementes de Chia:</strong> Pequenas e poderosas, ricas em ômega-3 e fibras.</li>
+      </ul>
+      <p><strong>Dica do Pericles:</strong> Comece devagar! Se você aumentar o consumo de fibras de repente, beba muita água para ajudar na digestão.</p>
+    </section>
+
     <section id="tecnologia-saude">
-      <h2>Tecnologia e Saúde: O que você precisa saber sobre Fones Bluetooth e Micro-ondas</h2>
-      <p>Vivemos cercados por ondas eletromagnéticas, e é natural surgirem dúvidas sobre o impacto disso no corpo. Analisamos o que a ciência diz sobre esses dispositivos.</p>
-
-      <h3>🎧 Fones Bluetooth: Conveniência vs. Exposição</h3>
-      <p>Embora a potência seja baixa (1-10 mW), o uso prolongado perto da cabeça exige atenção.</p>
+      <h2>Tecnologia e Saúde: Bluetooth e Micro-ondas</h2>
+      <p>Analisamos a segurança desses dispositivos que usamos diariamente na Drogaria.</p>
+      <h3>Dicas de Precaução:</h3>
       <ul>
-        <li><strong>Possíveis efeitos:</strong> Estudos indicam que o uso por muitas horas diárias, durante anos, pode causar alterações sutis em neurotransmissores ou estresse oxidativo.</li>
-        <li><strong>Consenso Científico:</strong> Não há evidências fortes de câncer cerebral. A radiação é centenas de vezes mais fraca que a de um celular.</li>
-        <li><strong>O perigo real:</strong> A maior preocupação é o <strong>dano auditivo</strong> pelo volume alto, não a radiação.</li>
-      </ul>
-
-      <h3>🍿 Fornos de Micro-ondas: Mitos e Verdades</h3>
-      <p>Fornos modernos são blindados e seguros quando em bom estado.</p>
-      <ul>
-        <li><strong>Segurança:</strong> A radiação emitida é mínima e segue normas rígidas da ANATEL e FDA. Não torna a comida radioativa.</li>
-        <li><strong>Dica Importante:</strong> Em níveis altos (fornos danificados), pode haver risco de queimaduras térmicas.</li>
-      </ul>
-
-      <div class="highlight-box">
-        "Adotar uma abordagem precaucionária significa reduzir a exposição desnecessária enquanto a ciência continua investigando efeitos a longo prazo."
-      </div>
-
-      <h3>Dicas Práticas do Pericles:</h3>
-      <ul>
-        <li><strong>Priorize o Fogão:</strong> Evite o micro-ondas sempre que possível. Prefira o fogão ou forno convencional para suas refeições diárias; são opções mais naturais.</li>
-        <li><strong>Mantenha Distância:</strong> Se usar o micro-ondas, fique a pelo menos 1 metro de distância enquanto ele opera.</li>
-        <li><strong>Fones com Fio:</strong> Opte por fones com fio para usos longos (reuniões e trabalho) e use o viva-voz sempre que puder.</li>
-        <li><strong>Cuidado com Plásticos:</strong> Nunca aqueça plásticos no micro-ondas; prefira sempre vidro ou cerâmica.</li>
+        <li><strong>Priorize o Fogão:</strong> Use o micro-ondas apenas para urgências, prefira o fogão convencional.</li>
+        <li><strong>Distância:</strong> Fique a 1 metro do micro-ondas ligado.</li>
+        <li><strong>Fones:</strong> Use fones com fio sempre que possível para usos longos.</li>
       </ul>
     </section>
 
-    <section id="conservantes">
-      <h2>Novos dados relacionam conservantes alimentares a maior risco de câncer e diabetes tipo 2</h2>
-      <p>Um estudo recente baseado na coorte francesa <strong>NutriNet-Santé</strong> trouxe revelações importantes sobre a nossa alimentação processada.</p>
-      <div class="highlight-box">
-        "O consumo elevado de certos conservantes, como sorbatos e nitritos, está associado a um aumento significativo nos riscos à saúde."
-      </div>
-      <p><strong>Dica do Pericles:</strong> Priorize sempre alimentos frescos. Descasque mais e desembale menos!</p>
-    </section>
-
-    <section id="polilaminina">
-      <h2>Medicamento experimental brasileiro mostra avanços em pacientes paraplégicos</h2>
-      <p>Pesquisadores da <strong>UFRJ</strong> desenvolveram a <strong>polilaminina</strong>, substância que atua como "cola biológica" para regeneração da medula espinhal.</p>
-    </section>
-
-    <section id="janeiro-seco">
-      <h2>'Janeiro Seco': Estudo confirma benefícios de um mês sem álcool</h2>
-      <p>Abstinência temporária melhora o sono, a função hepática e reduz a pressão arterial.</p>
-    </section>
-
-    <section id="adocantes">
-      <h2>Adoçantes artificiais e o cérebro</h2>
-      <p>Pesquisas discutem a relação entre o uso frequente de aspartame e sacarina com o declínio cognitivo.</p>
-    </section>
+    <section id="conservantes"><h2>Alerta sobre Conservantes</h2><p>Evite ultraprocessados para prevenir riscos de câncer e diabetes.</p></section>
+    <section id="polilaminina"><h2>Avanço na UFRJ</h2><p>Ciência brasileira na vanguarda do tratamento de lesões medulares.</p></section>
+    <section id="janeiro-seco"><h2>Janeiro Seco</h2><p>Um mês sem álcool melhora o sono, o fígado e a disposição.</p></section>
+    <section id="adocantes"><h2>Adoçantes Artificiais</h2><p>Atenção ao aspartame e sacarina em excesso.</p></section>
 
     <section class="cta">
-      <h2>Ficou com alguma dúvida?</h2>
-      <p>Fale agora com a nossa equipe ou acompanhe as novidades no canal.</p>
+      <h2>Dúvida sobre suplementos de fibra?</h2>
+      <p>Fale agora com a nossa equipe no WhatsApp!</p>
       <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
         <a href="https://wa.me/556196592066" target="_blank" class="btn-whatsapp">WhatsApp Pedidos</a>
         <a href="https://whatsapp.com/channel/0029VbCNcI32f3EG9LzfoK3d" target="_blank" class="btn-whatsapp" style="background:#00b0ff;">Seguir Canal</a>
