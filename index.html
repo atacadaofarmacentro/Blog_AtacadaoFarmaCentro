@@ -12,39 +12,30 @@
     header { background: #009688; color: white; text-align: center; padding: 40px 20px; }
     header h1 { margin: 0; font-size: 2.5em; font-weight: 700; }
     header p { margin: 10px 0 20px; font-style: italic; font-size: 0.9em; opacity: 0.9; }
-    
     nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
     nav a { color: white; text-decoration: none; font-weight: bold; font-size: 0.95em; transition: opacity 0.3s; display: flex; align-items: center; gap: 8px; }
     nav a:hover { opacity: 0.7; }
-
     .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
     .intro-text { text-align: center; margin-bottom: 20px; color: #555; }
-    
     .channel-banner { text-align: center; margin-bottom: 40px; }
     .btn-channel { background: #00b0ff; color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 10px rgba(0,176,255,0.3); transition: transform 0.2s; }
     .btn-channel:hover { transform: scale(1.05); background: #0081cb; }
-
     .post-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 50px; }
     .post-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 1px solid #eee; display: flex; flex-direction: column; }
     .post-card h3 { color: #00796b; margin-top: 0; font-size: 1.4em; line-height: 1.3; }
     .post-date { font-size: 0.85em; color: #aaa; margin: -10px 0 15px; }
     .post-card p { color: #666; font-size: 1em; margin-bottom: 20px; flex-grow: 1; }
-    
     .read-more { display: inline-block; background: #00b0ff; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; width: fit-content; transition: background 0.3s; }
     .read-more:hover { background: #0081cb; }
-
     section { background: white; padding: 40px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); scroll-margin-top: 20px; }
     section h2 { color: #00796b; border-bottom: 2px solid #00b0ff; padding-bottom: 10px; margin-top: 0; margin-bottom: 20px; }
     section h3 { color: #00796b; margin-top: 25px; }
     section ul { padding-left: 20px; }
     section ul li { margin-bottom: 10px; }
     .highlight-box { background: #f0fdfa; border-left: 4px solid #009688; padding: 15px; margin: 20px 0; font-style: italic; }
-
     .cta { text-align: center; margin: 50px 0; background: #e0f2f1; padding: 40px; border-radius: 12px; }
     .btn-whatsapp { background: #00796b; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; font-size: 1.1em; }
-    
     footer { background: #f1f1f1; text-align: center; padding: 25px; font-size: 0.9em; color: #777; border-top: 1px solid #ddd; }
-    
     @media (max-width: 768px) { .post-list { grid-template-columns: 1fr; } header h1 { font-size: 1.8em; } nav { gap: 10px; } nav a { font-size: 0.85em; } }
   </style>
 </head>
@@ -62,8 +53,6 @@
   </header>
   
   <main class="container">
-    <p class="intro-text">Informação de qualidade para você cuidar da sua saúde e da sua família.</p>
-    
     <div class="channel-banner">
         <a href="https://whatsapp.com/channel/0029VbCNcI32f3EG9LzfoK3d" target="_blank" class="btn-channel">
             <i class="fab fa-whatsapp"></i> Entre no nosso Canal do WhatsApp
@@ -72,74 +61,106 @@
 
     <div class="post-list">
       <div class="post-card">
-        <h3>Dose ideal de exercício contra Gordura no Fígado</h3>
+        <h3>Dose ideal contra Gordura no Fígado</h3>
         <p class="post-date">23/01/2026</p>
-        <p>Novo estudo identifica a combinação e o tempo exato de treino para reduzir a esteatose hepática.</p>
+        <p>Novo estudo identifica a dose ideal de exercício para reduzir a esteatose hepática.</p>
         <a href="#gordura-figado" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
         <h3>As fibras podem ajudar a emagrecer?</h3>
         <p class="post-date">22/01/2026</p>
-        <p>Muitas vezes negligenciada, a fibra pode ser o "ingrediente secreto" para o sucesso na perda de peso.</p>
+        <p>A fibra pode ser o "ingrediente secreto" para o sucesso na perda de peso.</p>
         <a href="#fibras-emagrecer" class="read-more">Leia mais →</a>
       </div>
 
       <div class="post-card">
         <h3>Tecnologia e Saúde: Bluetooth e Micro-ondas</h3>
         <p class="post-date">22/01/2026</p>
-        <p>Entenda o que a ciência diz sobre a segurança dos dispositivos no seu dia a dia.</p>
+        <p>Entenda a segurança dos dispositivos no seu dia a dia.</p>
         <a href="#tecnologia-saude" class="read-more">Leia mais →</a>
+      </div>
+
+      <div class="post-card">
+        <h3>Alerta: Conservantes e Riscos</h3>
+        <p class="post-date">21/01/2026</p>
+        <p>Consumo de aditivos alimentares e o aumento de doenças.</p>
+        <a href="#conservantes" class="read-more">Leia mais →</a>
+      </div>
+
+      <div class="post-card">
+        <h3>Janeiro Seco: Benefícios Reais</h3>
+        <p class="post-date">20/01/2026</p>
+        <p>O que acontece com seu corpo após 30 dias sem álcool.</p>
+        <a href="#janeiro-seco" class="read-more">Leia mais →</a>
+      </div>
+
+      <div class="post-card">
+        <h3>Adoçantes e o Cérebro</h3>
+        <p class="post-date">19/01/2026</p>
+        <p>Como alternativas ao açúcar podem afetar sua memória.</p>
+        <a href="#adocantes" class="read-more">Leia mais →</a>
+      </div>
+
+      <div class="post-card">
+        <h3>Esperança para Paraplégicos: UFRJ</h3>
+        <p class="post-date">15/01/2026</p>
+        <p>Ciência brasileira na vanguarda da regeneração medular.</p>
+        <a href="#polilaminina" class="read-more">Leia mais →</a>
       </div>
     </div>
 
     <section id="gordura-figado">
-      <h2>Dose ideal de exercício para reduzir a esteatose hepática</h2>
-      <p>A esteatose hepática é uma característica central da doença metabólica e pode ser revertida em seus estágios iniciais.</p>
-      
-      <div class="highlight-box">
-        "O exercício combinado (aeróbico + resistência) oferece vantagens terapêuticas superiores para reduzir a gordura no fígado."
-      </div>
-
-      <h3>Principais Descobertas do Estudo de 2026:</h3>
+      <h2>Dose ideal de exercício para reduzir a gordura no fígado</h2>
+      <p>A esteatose hepática é reversível em seus estágios iniciais com intervenção de exercícios.</p>
+      <div class="highlight-box">"A dose ideal para eficácia máxima é de 850 MET-min/semana."</div>
       <ul>
-        <li><strong>Eficácia Clínica:</strong> Uma dose superior a 460 MET-min/semana é necessária para alcançar melhorias clínicas significativas.</li>
-        <li><strong>Dose Máxima:</strong> O benefício atinge seu auge com 850 MET-min/semana.</li>
-        <li><strong>Tipo de Exercício:</strong> Combinar aeróbico com musculação acima de 130 MET-min/semana já gera melhorias significativas.</li>
-        <li><strong>Fatores de Influência:</strong> A eficácia pode variar conforme o estado da doença e o uso de medicamentos.</li>
+        <li>Dose mínima clínica: > 460 MET-min/semana.</li>
+        <li>Melhor tipo: Combinação de aeróbico e resistência.</li>
       </ul>
-      <p><strong>Dica do Pericles:</strong> Exercício é medicamento! Comece com a combinação certa para proteger seu fígado.</p>
     </section>
 
     <section id="fibras-emagrecer">
-      <h2>As fibras podem ajudar a emagrecer?</h2>
-      <p>A fibra é crucial para a digestão e controle do peso. Menos de 5% da população atinge a meta diária recomendada.</p>
-      <h3>Benefícios:</h3>
-      <ul>
-        <li>Promovem saciedade e auxiliam no controle da insulina.</li>
-        <li>Reduzem o colesterol LDL e a pressão arterial.</li>
-      </ul>
+      <h2>As fibras ajudam a emagrecer?</h2>
+      <p>Fibras promovem saciedade e auxiliam no controle da insulina.</p>
     </section>
 
     <section id="tecnologia-saude">
-      <h2>Tecnologia e Saúde</h2>
-      <p>Dicas de precaução no uso de micro-ondas e fones bluetooth para manter sua saúde em dia.</p>
+      <h2>Tecnologia: Bluetooth e Micro-ondas</h2>
+      <p>Dicas para o uso seguro de dispositivos eletrônicos.</p>
+    </section>
+
+    <section id="conservantes">
+      <h2>Alerta sobre Conservantes</h2>
+      <p>Evite ultraprocessados para reduzir riscos metabólicos.</p>
+    </section>
+
+    <section id="janeiro-seco">
+      <h2>Janeiro Seco</h2>
+      <p>30 dias sem álcool trazem clareza mental e melhora no sono.</p>
+    </section>
+
+    <section id="adocantes">
+      <h2>Adoçantes e Memória</h2>
+      <p>Impactos de longo prazo do uso contínuo de adoçantes artificiais.</p>
+    </section>
+
+    <section id="polilaminina">
+      <h2>Ciência Brasileira: Polilaminina</h2>
+      <p>Estudos promissores da UFRJ para regeneração de medula.</p>
     </section>
 
     <section class="cta">
-      <h2>Dúvidas sobre sua saúde?</h2>
-      <p>Fale com nossa equipe técnica agora mesmo!</p>
+      <h2>Dúvidas? Fale com a gente!</h2>
       <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
         <a href="https://wa.me/556196592066" target="_blank" class="btn-whatsapp">WhatsApp Pedidos</a>
         <a href="https://whatsapp.com/channel/0029VbCNcI32f3EG9LzfoK3d" target="_blank" class="btn-whatsapp" style="background:#00b0ff;">Seguir Canal</a>
       </div>
     </section>
-
   </main>
   
   <footer>
-    <p>© 2026 Atacadão Farma Centro - Cuidando da sua saúde com seriedade e carinho.</p>
+    <p>© 2026 Atacadão Farma Centro - Cuidando da sua saúde com carinho.</p>
   </footer>
-
 </body>
 </html>
