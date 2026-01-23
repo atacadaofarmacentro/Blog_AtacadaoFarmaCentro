@@ -16,6 +16,7 @@
     nav a { color: white; text-decoration: none; font-weight: bold; font-size: 0.95em; transition: opacity 0.3s; display: flex; align-items: center; gap: 8px; }
     nav a:hover { opacity: 0.7; }
     .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+    .intro-text { text-align: center; margin-bottom: 20px; color: #555; }
     .channel-banner { text-align: center; margin-bottom: 40px; }
     .btn-channel { background: #00b0ff; color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 10px rgba(0,176,255,0.3); transition: transform 0.2s; }
     .btn-channel:hover { transform: scale(1.05); background: #0081cb; }
@@ -23,13 +24,19 @@
     .post-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 1px solid #eee; display: flex; flex-direction: column; }
     .post-card h3 { color: #00796b; margin-top: 0; font-size: 1.4em; line-height: 1.3; }
     .post-date { font-size: 0.85em; color: #aaa; margin: -10px 0 15px; }
-    .read-more { display: inline-block; background: #00b0ff; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; width: fit-content; margin-top: auto; }
+    .post-card p { color: #666; font-size: 1em; margin-bottom: 20px; flex-grow: 1; }
+    .read-more { display: inline-block; background: #00b0ff; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; width: fit-content; transition: background 0.3s; }
+    .read-more:hover { background: #0081cb; }
     section { background: white; padding: 40px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); scroll-margin-top: 20px; }
-    section h2 { color: #00796b; border-bottom: 2px solid #00b0ff; padding-bottom: 10px; }
+    section h2 { color: #00796b; border-bottom: 2px solid #00b0ff; padding-bottom: 10px; margin-top: 0; margin-bottom: 20px; }
+    section h3 { color: #00796b; margin-top: 25px; }
+    section ul { padding-left: 20px; }
+    section ul li { margin-bottom: 10px; }
     .highlight-box { background: #f0fdfa; border-left: 4px solid #009688; padding: 15px; margin: 20px 0; font-style: italic; }
     .cta { text-align: center; margin: 50px 0; background: #e0f2f1; padding: 40px; border-radius: 12px; }
-    .btn-whatsapp { background: #00796b; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; }
-    footer { background: #f1f1f1; text-align: center; padding: 25px; border-top: 1px solid #ddd; }
+    .btn-whatsapp { background: #00796b; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; font-size: 1.1em; }
+    footer { background: #f1f1f1; text-align: center; padding: 25px; font-size: 0.9em; color: #777; border-top: 1px solid #ddd; }
+    @media (max-width: 768px) { .post-list { grid-template-columns: 1fr; } header h1 { font-size: 1.8em; } nav { gap: 10px; } nav a { font-size: 0.85em; } }
   </style>
 </head>
 <body>
@@ -38,134 +45,14 @@
     <h1>Blog Atacadão Farma Centro</h1>
     <p>Drogaria do Pericles</p>
     <nav>
-      <a href="https://atacadaofarmacentro.github.io/atacadaofarmacentro/">🏠 Site Principal</a>
-      <a href="https://whatsapp.com/channel/0029VbCNcI32f3EG9LzfoK3d" target="_blank">📢 Nosso Canal</a>
-      <a href="https://wa.me/556196592066" target="_blank">💬 WhatsApp</a>
+      <a href="https://atacadaofarmacentro.github.io/atacadaofarmacentro/"><i class="fas fa-home"></i> Site Principal</a>
+      <a href="https://whatsapp.com/channel/0029VbCNcI32f3EG9LzfoK3d" target="_blank"><i class="fas fa-bullhorn"></i> Nosso Canal</a>
+      <a href="https://wa.me/556196592066" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.instagram.com/farmacentro061/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
     </nav>
   </header>
   
   <main class="container">
+    <p class="intro-text">Informação de qualidade para você cuidar da sua saúde e da sua família.</p>
+    
     <div class="channel-banner">
-        <a href="https://whatsapp.com/channel/0029VbCNcI32f3EG9LzfoK3d" target="_blank" class="btn-channel">
-            <i class="fab fa-whatsapp"></i> Entre no nosso Canal do WhatsApp
-        </a>
-    </div>
-
-    <div class="post-list">
-      <div class="post-card">
-        <h3>ISTs: Como se contrai uma?</h3>
-        <p class="post-date">23/01/2026</p>
-        <p>Entenda a transmissão, prevenção e tratamentos das Infecções Sexualmente Transmissíveis.</p>
-        <a href="#ists-completo" class="read-more">Leia mais</a>
-      </div>
-      <div class="post-card">
-        <h3>Alerta VSR: Risco para Prematuros</h3>
-        <p class="post-date">23/01/2026</p>
-        <p>Bebês nascidos com até 36 semanas têm maior risco de VSR grave.</p>
-        <a href="#vsr-prematuros" class="read-more">Leia mais</a>
-      </div>
-      <div class="post-card">
-        <h3>Benefícios da Amamentação</h3>
-        <p class="post-date">23/01/2026</p>
-        <p>O leite materno é o alimento mais completo para o bebê e a mãe.</p>
-        <a href="#amamentacao" class="read-more">Leia mais</a>
-      </div>
-    </div>
-
-    <section id="ists-completo">
-      <h2>ISTs: Como se contrai uma? Prevenção e Tratamento</h2>
-      <p>As infecções sexualmente transmissíveis (ISTs) podem ser transmitidas de pessoa para pessoa por meio do contato sexual, como sexo vaginal, anal e oral. A maioria das ISTs é evitável. Em vez de usar o termo antigo, doenças sexualmente transmissíveis (DSTs), os médicos agora tendem a se referir a essas condições como "ISTs".</p>
-      
-      <div class="highlight-box">
-        As ISTs são muito comuns. O CDC estima que houve mais de 2 milhões de casos em 2018. Muitas vezes os sintomas são leves ou ausentes, por isso o exame regular é essencial.
-      </div>
-
-      <h3>Transmissão</h3>
-      <p>As ISTs podem ser transmitidas através de:</p>
-      <ul>
-        <li>Contato direto com uma lesão ou ferida.</li>
-        <li>Exposição ao sangue que contém o agente infeccioso.</li>
-        <li>Contato com fluido vaginal ou sêmen.</li>
-        <li>Compartilhamento de agulhas.</li>
-        <li>Contato pele a pele (como no caso do Herpes e HPV).</li>
-        <li>Contato pessoal íntimo (como piolhos pubianos).</li>
-      </ul>
-
-      <h3>Prevenção</h3>
-      <ul>
-        <li><strong>Preservativos:</strong> Reduzem drasticamente o risco de contato com fluidos e lesões.</li>
-        <li><strong>Vacinas:</strong> Proteção contra Hepatite e HPV.</li>
-        <li><strong>Lubrificantes à base de água:</strong> Evitam o rompimento da camisinha.</li>
-        <li><strong>Testagem:</strong> Fazer exames regularmente, especialmente antes de novos parceiros.</li>
-      </ul>
-
-      <h3>Tratamento</h3>
-      <p>O tratamento depende do tipo (Bacteriana, Viral ou Parasitária):</p>
-      <ul>
-        <li><strong>Antibióticos:</strong> Tratam clamídia, gonorreia, sífilis e tricomoníase.</li>
-        <li><strong>Antivirais:</strong> Tratam herpes e HIV, prevenindo surtos e suprimindo o vírus.</li>
-        <li><strong>Loções:</strong> Tratam parasitas como piolhos pubianos e sarna.</li>
-      </ul>
-      <p><strong>Dica do Pericles:</strong> A detecção precoce evita complicações graves como infertilidade, dor pélvica crônica e até certos tipos de câncer.</p>
-    </section>
-
-    <section id="vsr-prematuros">
-      <h2>Parto prematuro aumenta o risco de VSR grave</h2>
-      <p>Crianças prematuras, mesmo aquelas nascidas com idade gestacional de até 36 semanas, correm maior risco de desenvolver casos graves de vírus sincicial respiratório (VSR), resultando em complicações severas, como internação em UTIs, em comparação com aquelas nascidas a termo.</p>
-      <p>O VSR é a principal causa de hospitalização infantil nos Estados Unidos. Infecções por VSR na primeira infância estão associadas a doenças respiratórias crônicas e asma na vida adulta.</p>
-      <div class="highlight-box">Bebês prematuros têm um risco 1,8x maior de precisar de ventilação mecânica em comparação com bebês nascidos a termo.</div>
-      <p>Daniele Gusland, especialista em doenças infecciosas, reforça que bebês pequenos correm alto risco de hospitalização. Recomenda-se a vacinação para bebês com menos de 8 meses conforme as diretrizes da AAP.</p>
-    </section>
-
-    <section id="amamentacao">
-      <h2>Quais são os benefícios da amamentação para a saúde?</h2>
-      <p>A OMS, a AAP e o UNICEF recomendam que o aleitamento materno seja iniciado na primeira hora após o nascimento e continue por pelo menos os primeiros seis meses. Recentemente, a orientação mudou para até dois anos ou mais.</p>
-      <h3>Composição do Leite:</h3>
-      <ul>
-        <li><strong>Colostro:</strong> Rico em anticorpos, proporciona imunidade passiva.</li>
-        <li><strong>Leite de Transição:</strong> Alta concentração calórica, gorduras e vitaminas.</li>
-        <li><strong>Leite Maduro:</strong> 90% água para hidratação e 10% de nutrientes essenciais.</li>
-      </ul>
-      <p>O aleitamento reduz o risco de mortalidade infantil em 14 vezes e protege contra asma, eczema e morte súbita (SMSI). Para a mãe, reduz o risco de câncer de mama, ovário e depressão pós-parto.</p>
-    </section>
-
-    <section id="saude-mental">
-      <h2>O que é Saúde Mental?</h2>
-      <p>Saúde mental diz respeito à forma como as pessoas pensam, sentem e se comportam. Fatores como estresse, pressão socioeconômica e biologia moldam nosso bem-estar.</p>
-      <div class="highlight-box">“Saúde mental é um estado de bem-estar que permite lidar com o estresse da vida e trabalhar bem.” - OMS</div>
-      <h3>Sinais de alerta:</h3>
-      <ul>
-        <li>Afastamento de amigos e familiares.</li>
-        <li>Baixa energia constante e confusão mental.</li>
-        <li>Alterações severas no sono e apetite.</li>
-      </ul>
-      <p><strong>Dica do Pericles:</strong> Exercícios e sono de qualidade são remédios naturais para a mente!</p>
-    </section>
-
-    <section id="gordura-figado">
-      <h2>Dose ideal de exercício contra Gordura no Fígado</h2>
-      <p>Estudos recentes identificam que uma dose de 850 MET-min/semana alcança a eficácia máxima na redução da gordura hepática. Combinar exercícios aeróbicos e de resistência produz melhorias significativas para quem sofre de esteatose.</p>
-    </section>
-
-    <section id="fibras-emagrecer">
-      <h2>As fibras e o emagrecimento</h2>
-      <p>Fibras promovem saciedade e ajudam no controle da insulina. Menos de 5% da população atinge a meta diária (30g). Fontes: Frutas vermelhas, cereais integrais e sementes de chia.</p>
-    </section>
-
-    <section id="tecnologia-saude">
-      <h2>Tecnologia: Bluetooth e Micro-ondas</h2>
-      <p>Dicas de segurança: Mantenha distância de pelo menos 1 metro do micro-ondas ligado e use fones com fio para chamadas longas sempre que possível.</p>
-    </section>
-
-    <section class="cta">
-      <h2>Precisa de ajuda com sua saúde?</h2>
-      <p>Nossa equipe está pronta para te atender agora mesmo.</p>
-      <a href="https://wa.me/556196592066" target="_blank" class="btn-whatsapp">Falar com Farmacêutico</a>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 Atacadão Farma Centro - Informação de qualidade para sua família.</p>
-  </footer>
-</body>
-</html>
