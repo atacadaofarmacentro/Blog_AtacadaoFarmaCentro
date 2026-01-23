@@ -16,7 +16,6 @@
     nav a { color: white; text-decoration: none; font-weight: bold; font-size: 0.95em; transition: opacity 0.3s; display: flex; align-items: center; gap: 8px; }
     nav a:hover { opacity: 0.7; }
     .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
-    .intro-text { text-align: center; margin-bottom: 20px; color: #555; }
     .channel-banner { text-align: center; margin-bottom: 40px; }
     .btn-channel { background: #00b0ff; color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 10px rgba(0,176,255,0.3); transition: transform 0.2s; }
     .btn-channel:hover { transform: scale(1.05); background: #0081cb; }
@@ -24,19 +23,13 @@
     .post-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 1px solid #eee; display: flex; flex-direction: column; }
     .post-card h3 { color: #00796b; margin-top: 0; font-size: 1.4em; line-height: 1.3; }
     .post-date { font-size: 0.85em; color: #aaa; margin: -10px 0 15px; }
-    .post-card p { color: #666; font-size: 1em; margin-bottom: 20px; flex-grow: 1; }
-    .read-more { display: inline-block; background: #00b0ff; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; width: fit-content; transition: background 0.3s; }
-    .read-more:hover { background: #0081cb; }
+    .read-more { display: inline-block; background: #00b0ff; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; width: fit-content; margin-top: auto; }
     section { background: white; padding: 40px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); scroll-margin-top: 20px; }
-    section h2 { color: #00796b; border-bottom: 2px solid #00b0ff; padding-bottom: 10px; margin-top: 0; margin-bottom: 20px; }
-    section h3 { color: #00796b; margin-top: 25px; }
-    section ul { padding-left: 20px; }
-    section ul li { margin-bottom: 10px; }
+    section h2 { color: #00796b; border-bottom: 2px solid #00b0ff; padding-bottom: 10px; }
     .highlight-box { background: #f0fdfa; border-left: 4px solid #009688; padding: 15px; margin: 20px 0; font-style: italic; }
     .cta { text-align: center; margin: 50px 0; background: #e0f2f1; padding: 40px; border-radius: 12px; }
-    .btn-whatsapp { background: #00796b; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; font-size: 1.1em; }
-    footer { background: #f1f1f1; text-align: center; padding: 25px; font-size: 0.9em; color: #777; border-top: 1px solid #ddd; }
-    @media (max-width: 768px) { .post-list { grid-template-columns: 1fr; } header h1 { font-size: 1.8em; } nav { gap: 10px; } nav a { font-size: 0.85em; } }
+    .btn-whatsapp { background: #00796b; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; }
+    footer { background: #f1f1f1; text-align: center; padding: 25px; border-top: 1px solid #ddd; }
   </style>
 </head>
 <body>
@@ -45,10 +38,9 @@
     <h1>Blog Atacadão Farma Centro</h1>
     <p>Drogaria do Pericles</p>
     <nav>
-      <a href="https://atacadaofarmacentro.github.io/atacadaofarmacentro/"><i class="fas fa-home"></i> Site Principal</a>
-      <a href="https://whatsapp.com/channel/0029VbCNcI32f3EG9LzfoK3d" target="_blank"><i class="fas fa-bullhorn"></i> Nosso Canal</a>
-      <a href="https://wa.me/556196592066" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-      <a href="https://www.instagram.com/farmacentro061/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://atacadaofarmacentro.github.io/atacadaofarmacentro/">🏠 Site Principal</a>
+      <a href="https://whatsapp.com/channel/0029VbCNcI32f3EG9LzfoK3d" target="_blank">📢 Nosso Canal</a>
+      <a href="https://wa.me/556196592066" target="_blank">💬 WhatsApp</a>
     </nav>
   </header>
   
@@ -63,74 +55,79 @@
       <div class="post-card">
         <h3>Alerta VSR: Risco para Prematuros</h3>
         <p class="post-date">23/01/2026</p>
-        <p>Estudo mostra que bebês nascidos com 36 semanas têm maior risco de complicações graves pelo VSR.</p>
-        <a href="#vsr-prematuros" class="read-more">Leia mais →</a>
+        <p>Bebês nascidos com até 36 semanas têm maior risco de VSR grave.</p>
+        <a href="#vsr-prematuros" class="read-more">Leia mais</a>
       </div>
-
       <div class="post-card">
-        <h3>Benefícios da amamentação</h3>
+        <h3>Benefícios da Amamentação</h3>
         <p class="post-date">23/01/2026</p>
-        <p>Saiba por que o leite materno é o alimento mais completo e protetor para o seu bebê.</p>
-        <a href="#amamentacao" class="read-more">Leia mais →</a>
+        <p>O leite materno é o alimento mais completo para o bebê e a mãe.</p>
+        <a href="#amamentacao" class="read-more">Leia mais</a>
       </div>
-
       <div class="post-card">
-        <h3>Dose ideal contra Gordura no Fígado</h3>
+        <h3>Saúde Mental: O que cuidar</h3>
         <p class="post-date">23/01/2026</p>
-        <p>Novo estudo identifica a dose ideal de exercício para reduzir a esteatose hepática.</p>
-        <a href="#gordura-figado" class="read-more">Leia mais →</a>
+        <p>Entenda como pensamentos e emoções afetam seu dia a dia.</p>
+        <a href="#saude-mental" class="read-more">Leia mais</a>
       </div>
     </div>
 
     <section id="vsr-prematuros">
-      <h2>Parto prematuro aumenta o risco de VSR grave, mesmo com 36 semanas</h2>
-      <p>O Vírus Sincicial Respiratório (VSR) é a principal causa de hospitalização infantil. Um novo estudo de 2026 reforça que bebês prematuros, mesmo os de "final de gestação", correm alto risco.</p>
-      
-      <div class="highlight-box">
-        "Crianças prematuras apresentaram maior risco de internação em UTI (1,2x mais) e necessidade de ventilação mecânica (1,8x mais) em comparação a bebês nascidos a termo."
-      </div>
-
-      <h3>Principais Conclusões do Estudo:</h3>
-      <ul>
-        <li><strong>Risco persistente:</strong> Crianças prematuras representaram 30,1% das hospitalizações aos 23 meses de idade, mostrando que o risco vai além dos primeiros meses.</li>
-        <li><strong>Complicações:</strong> Maior desenvolvimento de displasia broncopulmonar (DBP), um fator que agrava a infecção.</li>
-        <li><strong>Importância da Prevenção:</strong> Como não existem antivirais específicos para o VSR, a vacinação e o suporte médico são as únicas armas.</li>
-      </ul>
-
-      <p><strong>Dica do Pericles:</strong> Pais de bebês prematuros devem redobrar os cuidados com a higiene e evitar locais fechados. A vacinação contra o VSR é essencial para grupos de risco!</p>
+      <h2>Parto prematuro aumenta o risco de VSR grave</h2>
+      <p>Crianças prematuras, mesmo aquelas nascidas com 36 semanas, correm maior risco de desenvolver casos graves de vírus sincicial respiratório (VSR), resultando em complicações como internação em UTIs.</p>
+      <div class="highlight-box">O VSR é a principal causa de hospitalização infantil nos EUA. Bebês prematuros têm 1,8x mais chance de precisar de ventilação mecânica.</div>
+      <p>Dicas de Prevenção: Vacinação para bebês com menos de 8 meses e higiene rigorosa para evitar o contágio.</p>
     </section>
 
     <section id="amamentacao">
-      <h2>Os benefícios da amamentação para a saúde</h2>
-      <p>O leite materno é vivo e se adapta às necessidades do bebê. Protege contra infecções e reduz riscos de doenças crônicas no futuro.</p>
+      <h2>Benefícios da Amamentação para a Saúde</h2>
+      <p>A OMS recomenda aleitamento materno na primeira hora após o nascimento e pelos primeiros seis meses de vida, podendo continuar até os dois anos.</p>
       <ul>
-        <li>Reduz risco de asma e alergias em 40%.</li>
-        <li>Protege a mãe contra câncer de mama e depressão pós-parto.</li>
+        <li><strong>Colostro:</strong> Protege contra infecções com imunidade passiva.</li>
+        <li><strong>Saúde Infantil:</strong> Redução de 64% em infecções gastrointestinais e 40% em asma.</li>
+        <li><strong>Saúde Materna:</strong> Reduz risco de hemorragia pós-parto e câncer de mama e ovário.</li>
       </ul>
+      <p><strong>Dica do Pericles:</strong> O leite maduro hidrata e ajuda no ganho de peso ideal do bebê!</p>
     </section>
 
     <section id="saude-mental">
-      <h2>O que é Saúde Mental e como cuidar?</h2>
-      <p>Cuidar da mente é tão importante quanto cuidar do corpo. Sinais de alerta incluem isolamento e cansaço extremo.</p>
+      <h2>O que é Saúde Mental?</h2>
+      <p>Diz respeito à forma como as pessoas pensam, sentem e se comportam. Fatores como estresse, pressão socioeconômica e biologia moldam nosso bem-estar.</p>
+      <div class="highlight-box">“Saúde mental é um estado de bem-estar que permite lidar com o estresse da vida e trabalhar bem.” - OMS</div>
+      <h3>Sinais de alerta:</h3>
+      <ul>
+        <li>Afastamento de amigos e familiares.</li>
+        <li>Baixa energia constante e confusão mental.</li>
+        <li>Alterações severas no sono e apetite.</li>
+      </ul>
+      <p><strong>Dica do Pericles:</strong> Exercícios e sono de qualidade são remédios naturais para a mente!</p>
     </section>
 
     <section id="gordura-figado">
-      <h2>Exercício contra Gordura no Fígado</h2>
-      <p>Combinar aeróbico e musculação é a receita ideal segundo a ciência atual.</p>
+      <h2>Dose ideal de exercício contra Gordura no Fígado</h2>
+      <p>Estudos recentes identificam que uma dose de 850 MET-min/semana alcança a eficácia máxima na redução da gordura hepática.</p>
+      <p>Combinar exercícios aeróbicos e de resistência acima de 130 MET-min/semana produz melhorias significativas.</p>
+    </section>
+
+    <section id="fibras-emagrecer">
+      <h2>As fibras e o emagrecimento</h2>
+      <p>Fibras promovem saciedade e ajudam no controle da insulina. Menos de 5% da população atinge a meta diária (30g).</p>
+      <p><strong>Fontes:</strong> Frutas vermelhas, cereais integrais e sementes de chia.</p>
+    </section>
+
+    <section id="tecnologia-saude">
+      <h2>Tecnologia: Bluetooth e Micro-ondas</h2>
+      <p>Mantenha distância de pelo menos 1 metro do micro-ondas ligado e use fones com fio para chamadas longas sempre que possível.</p>
     </section>
 
     <section class="cta">
-      <h2>Dúvidas sobre o VSR ou amamentação?</h2>
-      <p>Fale agora com a nossa equipe no WhatsApp!</p>
-      <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-        <a href="https://wa.me/556196592066" target="_blank" class="btn-whatsapp">WhatsApp Pedidos</a>
-        <a href="https://whatsapp.com/channel/0029VbCNcI32f3EG9LzfoK3d" target="_blank" class="btn-whatsapp" style="background:#00b0ff;">Seguir Canal</a>
-      </div>
+      <h2>Precisa de ajuda com sua saúde?</h2>
+      <a href="https://wa.me/556196592066" target="_blank" class="btn-whatsapp">Falar com Farmacêutico</a>
     </section>
   </main>
-  
+
   <footer>
-    <p>© 2026 Atacadão Farma Centro - Cuidando da sua saúde com seriedade e carinho.</p>
+    <p>© 2026 Atacadão Farma Centro - Cuidando da sua família.</p>
   </footer>
 </body>
 </html>
