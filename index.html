@@ -12,13 +12,13 @@
     header { background: #009688; color: white; text-align: center; padding: 40px 20px; }
     header h1 { margin: 0; font-size: 2.5em; font-weight: 700; }
     header p { margin: 10px 0 20px; font-style: italic; font-size: 0.9em; opacity: 0.9; }
-   
+  
     nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
     nav a { color: white; text-decoration: none; font-weight: bold; font-size: 0.95em; transition: opacity 0.3s; display: flex; align-items: center; gap: 8px; }
     nav a:hover { opacity: 0.7; }
     .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
     .intro-text { text-align: center; margin-bottom: 20px; color: #555; }
-   
+  
     .channel-banner { text-align: center; margin-bottom: 40px; }
     .btn-channel { background: #00b0ff; color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 10px rgba(0,176,255,0.3); transition: transform 0.2s; }
     .btn-channel:hover { transform: scale(1.05); background: #0081cb; }
@@ -27,7 +27,7 @@
     .post-card h3 { color: #00796b; margin-top: 0; font-size: 1.4em; line-height: 1.3; }
     .post-date { font-size: 0.85em; color: #aaa; margin: -10px 0 15px; }
     .post-card p { color: #666; font-size: 1em; margin-bottom: 20px; flex-grow: 1; }
-   
+  
     .read-more { display: inline-block; background: #00b0ff; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; width: fit-content; transition: background 0.3s; }
     .read-more:hover { background: #0081cb; }
     section { background: white; padding: 40px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); scroll-margin-top: 20px; }
@@ -38,9 +38,9 @@
     .highlight-box { background: #f0fdfa; border-left: 4px solid #009688; padding: 15px; margin: 20px 0; font-style: italic; }
     .cta { text-align: center; margin: 50px 0; background: #e0f2f1; padding: 40px; border-radius: 12px; }
     .btn-whatsapp { background: #00796b; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; font-size: 1.1em; }
-   
+  
     footer { background: #f1f1f1; text-align: center; padding: 25px; font-size: 0.9em; color: #777; border-top: 1px solid #ddd; }
-   
+  
     @media (max-width: 768px) { .post-list { grid-template-columns: 1fr; } header h1 { font-size: 1.8em; } nav { gap: 10px; } nav a { font-size: 0.85em; } }
   </style>
 </head>
@@ -55,16 +55,21 @@
       <a href="https://www.instagram.com/farmacentro061/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
     </nav>
   </header>
- 
   <main class="container">
     <p class="intro-text">Informação de qualidade para você cuidar da sua saúde e da sua família.</p>
-   
+  
     <div class="channel-banner">
         <a href="https://whatsapp.com/channel/0029VbCNcI32f3EG9LzfoK3d" target="_blank" class="btn-channel">
             <i class="fab fa-whatsapp"></i> Entre no nosso Canal do WhatsApp
         </a>
     </div>
     <div class="post-list">
+      <div class="post-card">
+        <h3>Por Que a Alimentação Saudável É Mais do Que Uma Moda?</h3>
+        <p class="post-date">24/01/2026</p>
+        <p>Descubra os incríveis benefícios de uma dieta equilibrada para o corpo e a mente, com dicas práticas para começar hoje.</p>
+        <a href="#alimentacao-saudavel" class="read-more">Leia mais →</a>
+      </div>
       <div class="post-card">
         <h3>O tratamento precoce do colesterol pode reduzir o risco cardíaco ao longo da vida</h3>
         <p class="post-date">23/01/2026</p>
@@ -90,12 +95,40 @@
         <a href="#fibras-emagrecer" class="read-more">Leia mais →</a>
       </div>
     </div>
+    <section id="alimentacao-saudavel">
+      <h2>Por Que a Alimentação Saudável É Mais do Que Uma Moda?</h2>
+      <p>Em um mundo cheio de fast-foods, delivery e lanches prontos, falar de "alimentação saudável" pode soar como um sermão chato. Mas a verdade é que o que você come é o combustível do seu corpo e da sua mente. Estudos mostram que uma dieta rica em nutrientes não só previne doenças, mas melhora tudo: energia, humor, produtividade e até a longevidade. De acordo com a Organização Mundial da Saúde (OMS), maus hábitos alimentares são responsáveis por milhões de mortes prematuras por ano, relacionadas a problemas como obesidade, diabetes e doenças cardíacas. O bom é que mudar isso não exige uma revolução – pequenas trocas já fazem diferença.</p>
+      
+      <h3>Benefícios Principais: Do Corpo à Mente</h3>
+      <p>Vamos quebrar isso em pontos chave para ficar fácil de ler (e de digerir!):</p>
+      <ol>
+        <li><strong>Fortalece o Sistema Imunológico:</strong> Uma alimentação rica em frutas, vegetais, grãos integrais e proteínas magras fornece vitaminas como C, E e zinco, que são escudos contra infecções. Por exemplo, comer laranjas ou kiwis regularmente pode reduzir o risco de resfriados em até 50%, segundo pesquisas da Harvard Health. No Brasil, onde temos acesso fácil a frutas tropicais como manga e abacaxi, isso é uma vantagem enorme!</li>
+        <li><strong>Melhora a Energia e o Humor:</strong> Esqueça o cansaço pós-almoço. Carboidratos complexos (como aveia ou arroz integral) liberam energia de forma gradual, evitando picos de açúcar no sangue. Adicione ômega-3 de peixes ou nozes, e você combate a depressão – um estudo da American Journal of Psychiatry mostrou que dietas mediterrâneas reduzem sintomas de ansiedade em 30%. Imagine acordar com mais disposição para o dia a dia?</li>
+        <li><strong>Previne Doenças Crônicas:</strong> Aqui está o impacto de longo prazo. Uma dieta baixa em açúcares refinados e gorduras saturadas diminui o risco de diabetes tipo 2 em até 90%, de acordo com o Diabetes Prevention Program. Para o coração, fibras de vegetais e frutas ajudam a controlar o colesterol. No contexto brasileiro, onde o consumo de feijão e arroz é comum, basta equilibrar com mais verduras para colher esses benefícios.</li>
+        <li><strong>Ajuda no Controle de Peso e na Aparência:</strong> Não é só sobre emagrecer, mas sobre se sentir bem. Alimentos integrais saciam mais, reduzindo o overeating. Além disso, antioxidantes em berries ou espinafre combatem o envelhecimento precoce da pele. Um estudo da Universidade de Leeds mostrou que quem come mais vegetais tem uma pele mais radiante – um glow natural sem precisar de cremes caros.</li>
+        <li><strong>Impulsiona o Desempenho Mental:</strong> Seu cérebro ama nutrientes como ferro (de carnes magras ou folhas verdes) e folato (de leguminosas). Pesquisas da Tufts University indicam que dietas saudáveis melhoram a concentração e a memória, reduzindo o risco de Alzheimer. Perfeito para quem trabalha ou estuda muito!</li>
+      </ol>
+      
+      <h3>Dicas Práticas para Começar Hoje</h3>
+      <p>Não precisa virar vegano da noite pro dia. Aqui vão passos simples:</p>
+      <ul>
+        <li>Troque o refinado pelo integral: Pão branco por integral, arroz branco por integral.</li>
+        <li>Inclua cores no prato: Pelo menos metade do almoço com vegetais e frutas variadas.</li>
+        <li>Hidrate-se: Água é essencial – mire em 2 litros por dia.</li>
+        <li>Planeje refeições: Prepare lanches saudáveis como iogurte com frutas para evitar impulsos.</li>
+        <li>Seja consistente: Comece com uma mudança por semana e veja os resultados.</li>
+      </ul>
+      
+      <h3>Conclusão: Invista no Seu Futuro</h3>
+      <p>Uma alimentação saudável não é um sacrifício, é um investimento que paga dividendos em saúde, vitalidade e felicidade. No final das contas, você é o que come – e optar por qualidade pode adicionar anos à sua vida e vida aos seus anos. Experimente por um mês e sinta a diferença. Se quiser mais receitas ou adaptações para o dia a dia brasileiro, é só pedir!</p>
+      <p><strong>Dica do Pericles:</strong> Uma alimentação saudável é essencial para prevenir doenças e melhorar o bem-estar. Consulte um profissional para orientação personalizada!</p>
+    </section>
     <section id="colesterol-precoce">
       <h2>O tratamento precoce do colesterol pode reduzir o risco cardíaco ao longo da vida</h2>
       <p>Editado por Archita Rai</p>
       <p>23 de janeiro de 2026</p>
       <p>RESUMO: Em uma simulação computacional de crianças com hipercolesterolemia familiar, iniciar o tratamento hipolipemiante na infância e mantê-lo por toda a vida resultou no menor risco cardiovascular projetado ao longo da vida. Atrasar, interromper ou suspender o tratamento, segundo um breve relatório publicado no JACC, aumentou o risco estimado.</p>
-      
+     
       <h3>METODOLOGIA:</h3>
       <ul>
         <li>Pesquisadores utilizaram um modelo de simulação computacional para estimar como o momento e a continuidade da terapia hipolipemiante afetariam o risco cardiovascular ao longo da vida em crianças com hipercolesterolemia familiar heterozigótica.</li>
@@ -104,7 +137,7 @@
         <li>Os pesquisadores compararam seis estratégias: (1) nenhum tratamento; (2) tratamento padrão; (3) terapia de redução de lipídios iniciada aos 10 anos de idade e continuada por toda a vida; (4) terapia iniciada aos 18 anos de idade e continuada por toda a vida; (5) terapia iniciada aos 10 anos de idade, interrompida aos 18 anos de idade e transição para tratamento padrão; e (6) terapia iniciada aos 10 anos de idade e descontinuada permanentemente aos 18 anos de idade.</li>
         <li>Os desfechos incluíram eventos de doença cardiovascular (DCV), anos de vida, anos de vida ajustados pela qualidade e eventos adversos relacionados à terapia. Os modelos foram executados 100 vezes para relatar intervalos de incerteza de 95%.</li>
       </ul>
-      
+     
       <h3>REMOVER:</h3>
       <ul>
         <li>A hipercolesterolemia familiar não tratada produziu uma exposição cumulativa média ao colesterol LDL de 14.921 mg/dL-anos, enquanto a terapia hipolipemiante ao longo da vida, iniciada aos 10 anos de idade, reduziu significativamente essa exposição.</li>
@@ -112,30 +145,30 @@
         <li>A terapia iniciada na infância e continuada por toda a vida reduziu as taxas de eventos cardiovasculares ao longo da vida em quase metade, em comparação com a ausência de tratamento para redução de lipídios (11,4 vs. 22,4 por 1000 pessoas-ano), e apresentou taxas comparáveis às da população geral de crianças americanas de 10 anos (10,7 eventos por 1000 pessoas-ano).</li>
         <li>Iniciar a terapia mais tarde ou interrompê-la foi associado a um aumento na exposição ao colesterol LDL, mais eventos cardiovasculares ao longo da vida e menos anos de vida do que a terapia contínua iniciada na infância. Iniciar a terapia aos 18 anos preveniu menos eventos e acrescentou menos anos de vida do que iniciá-la na infância.</li>
       </ul>
-      
+     
       <h3>NA PRÁTICA:</h3>
       <p>"A melhor abordagem para prevenir doenças cardiovasculares prematuras em pessoas com hipercolesterolemia familiar provavelmente é a terapia hipolipemiante iniciada durante a infância", escrevem os pesquisadores do estudo.</p>
       <p>"Essas descobertas ressaltam a importância essencial de apoiar pacientes com HF durante a transição para o atendimento médico adulto e garantir a terapia hipolipemiante ininterrupta na idade adulta", acrescentam.</p>
-      
+     
       <h3>FONTE:</h3>
       <p>O estudo foi liderado por Yun-Lin Huang, PharmD, MPH, do Centro Médico Irving da Universidade de Columbia, na cidade de Nova York. Foi publicado online em 21 de janeiro como um breve relatório no JACC.</p>
-      
+     
       <h3>LIMITAÇÕES:</h3>
       <p>O estudo carecia de dados populacionais sobre pessoas com hipercolesterolemia familiar nos EUA; portanto, os pesquisadores utilizaram um modelo de regressão já publicado para atribuir o status da doença aos participantes da pesquisa. Os resultados dependeram de pressupostos sobre o comportamento do paciente e do médico incorporados ao modelo.</p>
-      
+     
       <h3>DECLARAÇÕES:</h3>
       <p>Este estudo recebeu financiamento dos Institutos Nacionais de Saúde (NIH). Um dos autores relatou receber royalties de um livro didático online da UpToDate. Outro autor relatou ser funcionário e possuir ações da Verve Therapeutics, uma subsidiária da Eli Lilly and Company, e receber honorários de outras três organizações. Um autor relatou ser vice-presidente da Força-Tarefa de Serviços Preventivos dos EUA (USPSTF) e outro relatou ser funcionário de uma empresa de análise de evidências do mundo real.</p>
       <p>Este artigo foi criado utilizando diversas ferramentas editoriais, incluindo IA, como parte do processo. Editores humanos revisaram este conteúdo antes da publicação.</p>
       <p>Créditos: Imagem principal: ID 148990162 © Andrey Popov | Dreamstime.com</p>
       <p>Notícias Médicas da Medscape © 2026 WebMD, LLC</p>
       <p>Cite este artigo: Editado por Archita Rai. Tratamento precoce do colesterol pode reduzir o risco cardíaco ao longo da vida - Medscape - 23 de janeiro de 2026.</p>
-      
+     
       <h3>Recomendações</h3>
       <ul>
         <li>Hipercolesterolemia familiar: a chave é a triagem lipídica precoce.</li>
         <li>A condição genética de colesterol alto representa um risco de diabetes.</li>
       </ul>
-      
+     
       <h3>O que ler a seguir no Medscape</h3>
       <p>Negócios da Medicina</p>
       <ul>
@@ -143,7 +176,7 @@
         <li>Sobrevivendo e prosperando na faculdade de medicina: dicas de gerenciamento de tempo para o sucesso.</li>
         <li>Sugestões de Hicks: Aplicativos para gerenciamento de condições clínicas</li>
       </ul>
-      
+     
       <h3>Leitura recomendada</h3>
       <ul>
         <li>Doenças e Condições Diretrizes para o Manejo de Lipídios</li>
@@ -151,7 +184,7 @@
         <li>ACC 2024: Impacto Clínico de Novos Dados no Tratamento de Lipídios</li>
         <li>Diretrizes de Prática Clínica para o Manejo de Lipídios na Doença Renal Diabética em Adultos (ABCD-UKKA, 2024)</li>
       </ul>
-      
+     
       <h3>Condições e procedimentos relacionados</h3>
       <ul>
         <li>Diretrizes para o Manejo de Lipídios</li>
@@ -161,12 +194,12 @@
         <li>Quiz rápido de cinco perguntas: Controle de lipídios: Níveis elevados de colesterol HDL (hiperalfalipoproteinemia)</li>
         <li>Quiz rápido de cinco opções: Terapia hipolipemiante sem estatinas</li>
       </ul>
-      
+     
       <h3>Apresentação de slides</h3>
       <ul>
         <li>9 mitos alimentares que você deve ignorar</li>
       </ul>
-      
+     
       <h3>Comentário de especialista</h3>
       <ul>
         <li>Lípidos e Demência: Uma História Complexa e em Evolução</li>
@@ -187,7 +220,7 @@
       <p>Uma revisão e meta-análise publicada em BMJ comparou a eficácia de substâncias psicodélicas com a do escitalopram.</p>
       <p>Os resultados da revisão indicam que altas doses de psilocibina foram minimamente mais eficazes do que o escitalopram no alívio dos sintomas depressivos e ligeiramente mais eficazes do que o placebo nos ensaios com escitalopram.</p>
       <p>Os resultados sugerem que a psilocibina pode ser comparável ao tratamento antidepressivo atual.</p>
-      
+     
       <h3>Como os psicodélicos se comparam a outros tratamentos para a depressão?</h3>
       <p>Os psicodélicos são substâncias psicoativas que têm potencial para tratar diversas doenças mentais, como depressão e transtorno de estresse pós-traumático (TEPT). Exemplos comuns de psicodélicos incluem psilocibina, LSD e MDMA.</p>
       <p>Embora os psicodélicos tenham demonstrado potencial no tratamento da depressão, a realização de estudos duplo-cegos pode ser desafiadora devido aos efeitos subjetivos dessas substâncias. Assim, podem ocorrer diferentes efeitos placebo e possíveis vieses.</p>
@@ -200,7 +233,7 @@
         “Este estudo utilizou técnicas de meta-análise para comparar a eficácia de psicodélicos e do escitalopram (Lexapro) no tratamento de sintomas depressivos. É importante destacar que apenas a psilocibina em altas doses demonstrou maior eficácia do que o escitalopram. A psilocibina em altas doses mostra-se promissora como um tratamento de ação rápida e curto prazo para a depressão. Isso se compara aos antidepressivos, que levam semanas, ou até meses, para fazer efeito e só continuam a funcionar com o uso contínuo”, disse David Merrill, MD, PhD.
       </div>
       <p>“Embora não abordado neste estudo, o consenso clínico é que os benefícios de altas doses de psilocibina podem durar meses e potencialmente anos após o episódio agudo do tratamento. Às vezes, basta uma única sessão de tratamento para casos de depressão crônica intratável. Isso explica, em parte, por que a psicoterapia assistida por psicodélicos, em ambientes profissionais seguros e controlados, está ganhando tanta força e entusiasmo nos campos da psicologia e da psiquiatria”, acrescentou.</p>
-      
+     
       <h3>Limitações da revisão</h3>
       <p>Esta revisão apresenta algumas limitações. Primeiramente, é essencial reconhecer que todos os estudos incluídos na revisão possuem limitações. Por exemplo, os pesquisadores reconhecem que os efeitos dos psicodélicos podem ser superestimados em comparação com placebos internos, razão pela qual optaram por analisar a comparação entre os efeitos dos psicodélicos e os efeitos placebo de antidepressivos, bem como com doses baixas de psicodélicos. Eles também reconhecem que os participantes que receberam psilocibina frequentemente também estavam recebendo psicoterapia ou apoio psicológico, o que pode ter influenciado os resultados.</p>
       <p>Os pesquisadores também se concentraram apenas nos efeitos agudos, portanto, pesquisas futuras precisarão avaliar os efeitos a longo prazo de todos os medicamentos relacionados.</p>
@@ -208,13 +241,13 @@
       <p>Os pesquisadores também foram limitados pela opção de comparar doses extremamente baixas de psicodélicos, que não constituem um placebo verdadeiro. Os resultados também podem ter sido afetados pelas dificuldades em conciliar evidências diretas e indiretas e pelos vieses das evidências diretas, o que poderia ter superestimado os efeitos de altas doses de psilocibina em comparação com outros tratamentos.</p>
       <p>Os parâmetros de inclusão e exclusão também limitaram os pesquisadores, portanto, pesquisas futuras poderiam incluir parâmetros e critérios de inclusão diferentes.</p>
       <p>Por fim, os pesquisadores reconhecem que sua meta-análise pode não ter poder estatístico suficiente para identificar viés de publicação. Os pesquisadores também reconhecem que “a maior parte da certeza das evidências para comparações de tratamento foi moderada ou baixa”.</p>
-      
+     
       <h3>Padronização no tratamento psicodélico</h3>
       <p>Os autores do estudo sugerem que aprimorar os métodos de mascaramento e ter psicoterapias mais padronizadas poderia ajudar a aumentar a compreensão da eficácia dos psicodélicos.</p>
       <p>Matthew W. Johnson, PhD, pesquisador sênior do Centro de Excelência Sheppard Pratt para Pesquisa e Tratamento da Psilocibina, que não participou do estudo, mostrou-se cético em relação às conclusões da revisão e observou o seguinte:</p>
       <p>“Um dos principais motivos da minha falta de confiança nesse método específico é que os diversos estudos diferiram muito entre si, inclusive em relação à população estudada e ao transtorno tratado (sofrimento existencial, depressão maior, TEPT), o que impossibilitou uma comparação direta entre eles.”</p>
       <p>“Ao realizar análises agregadas, como meta-análises ou análises de rede como a que fizemos aqui, é importante garantir que os estudos agregados sejam suficientemente semelhantes entre si para fazerem sentido. Caso contrário, essas técnicas podem levar à falsa impressão de que se está obtendo uma resposta válida, quando, na verdade, a comparação não leva em conta”, explicou ele.</p>
-      
+     
       <h3>Mais opções de tratamento para pessoas com depressão</h3>
       <p>Apesar das limitações desta revisão, as conclusões apontam potencialmente para a expansão das opções de tratamento para pessoas com depressão. Isso permite que médicos e pacientes com depressão escolham entre mais terapias para encontrar a que funciona melhor para cada indivíduo.</p>
       <p>Com base neste estudo, altas doses de psilocibina pareceram ter efeitos semelhantes aos de antidepressivos no tratamento do transtorno depressivo maior. Assim, os pesquisadores recomendaram que a psilocibina provavelmente deva ser usada em conjunto com acompanhamento psicoterapêutico.</p>
@@ -230,13 +263,13 @@
       <p>Por Benedette Cuffari, M.Sc. Resenha por Joel Scanlon</p>
       <p>A Organização Mundial da Saúde (OMS), a Academia Americana de Pediatria (AAP), o Fundo das Nações Unidas para a Infância (UNICEF), assim como a maioria das outras agências de saúde em todo o mundo, recomendam que o aleitamento materno seja iniciado na primeira hora após o nascimento e continue por pelo menos os primeiros seis meses de vida. Recentemente, a AAP atualizou suas diretrizes para recomendar que as mães continuem amamentando seus filhos por até dois anos ou mais.</p>
       <p>Crédito da imagem: Bass Tatiana / Shutterstock.com</p>
-      
+     
       <h3>Composição do leite materno</h3>
       <p>O colostro, primeira secreção das mamas, é especialmente rico em diversas substâncias nutritivas, incluindo vitaminas lipossolúveis, minerais, proteínas e imunoglobulinas. De fato, o alto teor de anticorpos presente no colostro proporciona imunidade passiva ao bebê, protegendo-o contra vários tipos de infecções gastrointestinais e respiratórias.</p>
       <p>O leite de transição é considerado o segundo estágio do leite materno e normalmente é produzido durante as duas semanas seguintes ao parto. Em comparação com o colostro, o leite de transição tem uma concentração calórica mais elevada e também é rico em gordura, lactose e vitaminas hidrossolúveis.</p>
       <p>O estágio final do leite materno é conhecido como leite maduro. Apesar de ser composto por cerca de 90% de água, o que garante a hidratação do bebê, os 10% restantes do leite maduro consistem em carboidratos, proteínas e gorduras, todos essenciais para o desenvolvimento do lactente.</p>
       <p>O leite maduro pode ser ainda categorizado em leite inicial e leite final. O leite inicial é o leite produzido no início da mamada e contém água, vitaminas e proteínas. Em comparação, o leite final, produzido após a primeira ejaculação, possui um teor de gordura significativamente maior em relação ao leite inicial e desempenha um papel importante na capacidade do bebê de ganhar peso adequadamente.</p>
-      
+     
       <h3>Benefícios para a saúde infantil</h3>
       <p>A amamentação traz inúmeros benefícios para o bebê.</p>
       <p>Em termos de sua capacidade de proteger contra doenças infecciosas, qualquer quantidade de leite materno está associada a uma redução de 64% na incidência de infecções gastrointestinais não específicas. De fato, há evidências de que esse efeito protetor se mantém por até dois meses após o término da amamentação. Em comparação com bebês amamentados, bebês que consomem exclusivamente fórmula infantil apresentam um risco 80% maior de diarreia.</p>
@@ -246,7 +279,7 @@
       <p>O aleitamento materno também está associado a uma redução significativa do risco de mortalidade infantil. Apesar dos avanços médicos das últimas décadas, a mortalidade infantil continua sendo um problema significativo, mesmo em países desenvolvidos do Ocidente, como os Estados Unidos, onde a taxa de mortalidade infantil é de cerca de 5,8 para cada 1.000 nascidos vivos.</p>
       <p>Em comparação com bebês que foram amamentados exclusivamente, bebês não amamentados têm um risco de mortalidade 14 vezes maior até completarem dois anos de idade, particularmente em países em desenvolvimento. A amamentação, mesmo por apenas dois meses, também está associada a uma redução de até 40% no risco de síndrome da morte súbita infantil (SMSI). Esse efeito protetor aumenta para 60% e 64% para bebês que são amamentados por pelo menos quatro meses e seis meses ou mais, respectivamente.</p>
       <p>A amamentação também parece reduzir o risco de as crianças desenvolverem leucemia, doença celíaca, obesidade, doenças cardiovasculares, hipertensão e diabetes tipo 2 (DM) no futuro.</p>
-      
+     
       <h3>Benefícios maternos</h3>
       <p>A amamentação também está associada a diversos benefícios a curto e longo prazo para a mãe. Em termos de benefícios a curto prazo, amamentar por pelo menos os primeiros seis meses após o parto está associado a um risco reduzido de hemorragia pós-parto e amenorreia prolongada.</p>
       <p>Em mulheres sem diagnóstico pré-natal de depressão, a amamentação parece reduzir o risco de depressão pós-parto. Mais especificamente, a amamentação parece evocar emoções positivas intensas, associadas à redução dos sintomas de depressão aos dois, seis e doze meses após o parto. É importante ressaltar que mães que têm dificuldade em atingir seus objetivos de amamentação parecem apresentar maior risco de desenvolver depressão pós-parto.</p>
@@ -282,7 +315,6 @@
       </div>
     </section>
   </main>
- 
   <footer>
     <p>© 2026 Atacadão Farma Centro - Cuidando da sua saúde com seriedade e carinho.</p>
   </footer>
