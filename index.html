@@ -12,13 +12,13 @@
     header { background: #009688; color: white; text-align: center; padding: 40px 20px; }
     header h1 { margin: 0; font-size: 2.5em; font-weight: 700; }
     header p { margin: 10px 0 20px; font-style: italic; font-size: 0.9em; opacity: 0.9; }
-  
+   
     nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
     nav a { color: white; text-decoration: none; font-weight: bold; font-size: 0.95em; transition: opacity 0.3s; display: flex; align-items: center; gap: 8px; }
     nav a:hover { opacity: 0.7; }
     .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
     .intro-text { text-align: center; margin-bottom: 20px; color: #555; }
-  
+   
     .channel-banner { text-align: center; margin-bottom: 40px; }
     .btn-channel { background: #00b0ff; color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 10px rgba(0,176,255,0.3); transition: transform 0.2s; }
     .btn-channel:hover { transform: scale(1.05); background: #0081cb; }
@@ -27,7 +27,7 @@
     .post-card h3 { color: #00796b; margin-top: 0; font-size: 1.4em; line-height: 1.3; }
     .post-date { font-size: 0.85em; color: #aaa; margin: -10px 0 15px; }
     .post-card p { color: #666; font-size: 1em; margin-bottom: 20px; flex-grow: 1; }
-  
+   
     .read-more { display: inline-block; background: #00b0ff; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; width: fit-content; transition: background 0.3s; }
     .read-more:hover { background: #0081cb; }
     section { background: white; padding: 40px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); scroll-margin-top: 20px; }
@@ -38,9 +38,9 @@
     .highlight-box { background: #f0fdfa; border-left: 4px solid #009688; padding: 15px; margin: 20px 0; font-style: italic; }
     .cta { text-align: center; margin: 50px 0; background: #e0f2f1; padding: 40px; border-radius: 12px; }
     .btn-whatsapp { background: #00796b; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; font-size: 1.1em; }
-  
+   
     footer { background: #f1f1f1; text-align: center; padding: 25px; font-size: 0.9em; color: #777; border-top: 1px solid #ddd; }
-  
+   
     @media (max-width: 768px) { .post-list { grid-template-columns: 1fr; } header h1 { font-size: 1.8em; } nav { gap: 10px; } nav a { font-size: 0.85em; } }
   </style>
 </head>
@@ -57,13 +57,19 @@
   </header>
   <main class="container">
     <p class="intro-text">Informação de qualidade para você cuidar da sua saúde e da sua família.</p>
-  
+   
     <div class="channel-banner">
         <a href="https://whatsapp.com/channel/0029VbCNcI32f3EG9LzfoK3d" target="_blank" class="btn-channel">
             <i class="fab fa-whatsapp"></i> Entre no nosso Canal do WhatsApp
         </a>
     </div>
     <div class="post-list">
+      <div class="post-card">
+        <h3>O que você precisa saber sobre endometriose</h3>
+        <p class="post-date">27/01/2026</p>
+        <p>Entenda o que é a endometriose, seus sintomas, causas e as opções de tratamento disponíveis para melhorar a qualidade de vida.</p>
+        <a href="#endometriose-info" class="read-more">Leia mais →</a>
+      </div>
       <div class="post-card">
         <h3>Por Que a Alimentação Saudável É Mais do Que Uma Moda?</h3>
         <p class="post-date">24/01/2026</p>
@@ -95,10 +101,46 @@
         <a href="#fibras-emagrecer" class="read-more">Leia mais →</a>
       </div>
     </div>
+
+    <section id="endometriose-info">
+        <h2>O que você precisa saber sobre endometriose</h2>
+        <p>A endometriose envolve o crescimento de tecido semelhante ao revestimento uterino fora do útero. Ela geralmente afeta a região pélvica, mas pode ocorrer em outras partes do corpo. Embora a causa exata não seja clara, os fatores de risco incluem menstruação precoce, fluxo menstrual intenso, genética e problemas no sistema imunológico.</p>
+        
+        <h3>O que é endometriose?</h3>
+        <p>A endometriose ocorre quando um tecido semelhante ao revestimento do endométrio cresce fora do útero. O tecido pode se desenvolver em qualquer parte do corpo, mas geralmente afeta os ovários, as trompas de Falópio e tecidos que sustentam o útero. O corpo normalmente expele esse tecido durante a menstruação, mas na endometriose ele permanece no corpo, podendo causar inflamação e tecido cicatricial.</p>
+
+        <h3>Sintomas Comuns</h3>
+        <ul>
+            <li>Cólicas dolorosas e intensas.</li>
+            <li>Dor lombar e pélvica crônica.</li>
+            <li>Sangramento menstrual intenso ou entre períodos.</li>
+            <li>Dor durante as relações sexuais.</li>
+            <li>Problemas intestinais ou urinários (dor, diarreia, constipação).</li>
+            <li>Dificuldade para engravidar.</li>
+        </ul>
+
+        <div class="highlight-box">
+            "A dor é o sintoma mais comum, mas sua intensidade nem sempre está relacionada à extensão da doença. É fundamental um diagnóstico preciso, que muitas vezes pode demorar de 7 a 9 anos globalmente."
+        </div>
+
+        <h3>Causas e Diagnóstico</h3>
+        <p>As causas podem incluir fatores genéticos, problemas no sistema imunológico e altos níveis de estrogênio. O diagnóstico definitivo geralmente é feito através de exames pélvicos, ultrassom, ressonância magnética ou, em casos específicos, a laparoscopia cirúrgica.</p>
+
+        <h3>Tratamento e Qualidade de Vida</h3>
+        <p>Embora não exista cura, os sintomas podem ser controlados com:</p>
+        <ul>
+            <li><strong>Medicamentos:</strong> Analgésicos e anti-inflamatórios.</li>
+            <li><strong>Terapia Hormonal:</strong> Anticoncepcionais para reduzir os níveis de estrogênio.</li>
+            <li><strong>Cirurgia:</strong> Para remoção do tecido indesejado ou aderências.</li>
+            <li><strong>Dieta e Estilo de Vida:</strong> Redução de glúten, laticínios, cafeína e álcool pode ajudar no bem-estar geral.</li>
+        </ul>
+        <p><strong>Dica do Pericles:</strong> A endometriose impacta seriamente a vida social e emocional. Se você sente dores intensas, não espere: procure um especialista para orientação personalizada!</p>
+    </section>
+
     <section id="alimentacao-saudavel">
       <h2>Por Que a Alimentação Saudável É Mais do Que Uma Moda?</h2>
       <p>Em um mundo cheio de fast-foods, delivery e lanches prontos, falar de "alimentação saudável" pode soar como um sermão chato. Mas a verdade é que o que você come é o combustível do seu corpo e da sua mente. Estudos mostram que uma dieta rica em nutrientes não só previne doenças, mas melhora tudo: energia, humor, produtividade e até a longevidade. De acordo com a Organização Mundial da Saúde (OMS), maus hábitos alimentares são responsáveis por milhões de mortes prematuras por ano, relacionadas a problemas como obesidade, diabetes e doenças cardíacas. O bom é que mudar isso não exige uma revolução – pequenas trocas já fazem diferença.</p>
-      
+     
       <h3>Benefícios Principais: Do Corpo à Mente</h3>
       <p>Vamos quebrar isso em pontos chave para ficar fácil de ler (e de digerir!):</p>
       <ol>
@@ -108,7 +150,7 @@
         <li><strong>Ajuda no Controle de Peso e na Aparência:</strong> Não é só sobre emagrecer, mas sobre se sentir bem. Alimentos integrais saciam mais, reduzindo o overeating. Além disso, antioxidantes em berries ou espinafre combatem o envelhecimento precoce da pele. Um estudo da Universidade de Leeds mostrou que quem come mais vegetais tem uma pele mais radiante – um glow natural sem precisar de cremes caros.</li>
         <li><strong>Impulsiona o Desempenho Mental:</strong> Seu cérebro ama nutrientes como ferro (de carnes magras ou folhas verdes) e folato (de leguminosas). Pesquisas da Tufts University indicam que dietas saudáveis melhoram a concentração e a memória, reduzindo o risco de Alzheimer. Perfeito para quem trabalha ou estuda muito!</li>
       </ol>
-      
+     
       <h3>Dicas Práticas para Começar Hoje</h3>
       <p>Não precisa virar vegano da noite pro dia. Aqui vão passos simples:</p>
       <ul>
@@ -118,7 +160,7 @@
         <li>Planeje refeições: Prepare lanches saudáveis como iogurte com frutas para evitar impulsos.</li>
         <li>Seja consistente: Comece com uma mudança por semana e veja os resultados.</li>
       </ul>
-      
+     
       <h3>Conclusão: Invista no Seu Futuro</h3>
       <p>Uma alimentação saudável não é um sacrifício, é um investimento que paga dividendos em saúde, vitalidade e felicidade. No final das contas, você é o que come – e optar por qualidade pode adicionar anos à sua vida e vida aos seus anos. Experimente por um mês e sinta a diferença. Se quiser mais receitas ou adaptações para o dia a dia brasileiro, é só pedir!</p>
       <p><strong>Dica do Pericles:</strong> Uma alimentação saudável é essencial para prevenir doenças e melhorar o bem-estar. Consulte um profissional para orientação personalizada!</p>
@@ -273,50 +315,19 @@
       <h3>Benefícios para a saúde infantil</h3>
       <p>A amamentação traz inúmeros benefícios para o bebê.</p>
       <p>Em termos de sua capacidade de proteger contra doenças infecciosas, qualquer quantidade de leite materno está associada a uma redução de 64% na incidência de infecções gastrointestinais não específicas. De fato, há evidências de que esse efeito protetor se mantém por até dois meses após o término da amamentação. Em comparação com bebês amamentados, bebês que consomem exclusivamente fórmula infantil apresentam um risco 80% maior de diarreia.</p>
-      <p>Um nível semelhante de proteção contra infecções respiratórias foi relatado em bebês amamentados. Nesse sentido, crianças não amamentadas apresentam um risco de mortalidade por pneumonia até quinze vezes maior em comparação com bebês que são amamentados exclusivamente nos primeiros seis meses de vida. Além disso, bebês que foram amamentados exclusivamente por pelo menos quatro meses têm um risco reduzido de hospitalização por infecções do trato respiratório inferior em cerca de 72%.</p>
-      <p>Destaques da Pittcon: eBook sobre Bioanálise e Ciências da Vida. Confira os destaques da Pittcon no setor de Bioanálise e Ciências da Vida. Baixe a edição mais recente.</p>
-      <p>Estudos também demonstraram que o aleitamento materno reduz o risco de crianças desenvolverem diversas condições alérgicas, incluindo eczema, atopia, asma, além de alergias alimentares e respiratórias. Vários estudos mostraram que o risco de asma em bebês amamentados é reduzido em até 40%, principalmente em crianças com histórico familiar de asma.</p>
-      <p>O aleitamento materno também está associado a uma redução significativa do risco de mortalidade infantil. Apesar dos avanços médicos das últimas décadas, a mortalidade infantil continua sendo um problema significativo, mesmo em países desenvolvidos do Ocidente, como os Estados Unidos, onde a taxa de mortalidade infantil é de cerca de 5,8 para cada 1.000 nascidos vivos.</p>
-      <p>Em comparação com bebês que foram amamentados exclusivamente, bebês não amamentados têm um risco de mortalidade 14 vezes maior até completarem dois anos de idade, particularmente em países em desenvolvimento. A amamentação, mesmo por apenas dois meses, também está associada a uma redução de até 40% no risco de síndrome da morte súbita infantil (SMSI). Esse efeito protetor aumenta para 60% e 64% para bebês que são amamentados por pelo menos quatro meses e seis meses ou mais, respectivamente.</p>
-      <p>A amamentação também parece reduzir o risco de as crianças desenvolverem leucemia, doença celíaca, obesidade, doenças cardiovasculares, hipertensão e diabetes tipo 2 (DM) no futuro.</p>
-     
-      <h3>Benefícios maternos</h3>
-      <p>A amamentação também está associada a diversos benefícios a curto e longo prazo para a mãe. Em termos de benefícios a curto prazo, amamentar por pelo menos os primeiros seis meses após o parto está associado a um risco reduzido de hemorragia pós-parto e amenorreia prolongada.</p>
-      <p>Em mulheres sem diagnóstico pré-natal de depressão, a amamentação parece reduzir o risco de depressão pós-parto. Mais especificamente, a amamentação parece evocar emoções positivas intensas, associadas à redução dos sintomas de depressão aos dois, seis e doze meses após o parto. É importante ressaltar que mães que têm dificuldade em atingir seus objetivos de amamentação parecem apresentar maior risco de desenvolver depressão pós-parto.</p>
-      <p>Uma ampla gama de benefícios para a saúde a longo prazo tem sido associada à amamentação, alguns dos quais incluem a redução do risco de síndrome metabólica, diabetes tipo 2, doenças cardiovasculares e hipertensão.</p>
-      <p>Estudos também demonstraram que a amamentação reduz o risco de câncer de mama, ovário, endométrio e tireoide. Em geral, quanto mais tempo uma mulher amamenta durante seus anos reprodutivos, maior o benefício para sua saúde a longo prazo.</p>
-      <p>Como as mães podem amamentar para se manterem saudáveis.</p>
-      <p><strong>Referências</strong></p>
-      <ul>
-        <li>Visão geral da amamentação [Online]. Disponível em: https://americanpregnancy.org/healthy-pregnancy/breastfeeding/breastfeeding-overview/ .</li>
-        <li>Louis-Jacques, AF, & Stuebe, AM (2020). Permitir que o aleitamento materno apoie a saúde ao longo da vida da mãe e da criança. Clínicas de Obstetrícia e Ginecologia da América do Norte 47 (3); 363-381. doi:10.1016/j.ogc.2020.04.001.</li>
-        <li>Brahm, P., & Valdes, V. (2017). Benefícios da amamentação e riscos associados à não amamentação. Revista Chilena de Pediatria 88 (1); 15-21. https://scielo.conicyt.cl/pdf/rcp/v88n1/en_art01.pdf .</li>
-        <li>Jenco, M. (2017). Estudo: Amamentação por pelo menos 2 meses diminui o risco de SMSL (Síndrome da Morte Súbita Infantil). AAP News. https://publications.aap.org/aapnews/news/13812?autologincheck=redirected .</li>
-        <li>Ware, JL, Chen, A., Morrow, AL, & Kmet, J. (2019). Associações entre o início do aleitamento materno e a mortalidade infantil em uma população urbana. Breastfeeding Medicine 14 (7). doi:10.1089/bfm.2019.0067.</li>
-        <li>Amamentação [Online]. Disponível em: https://www.who.int/health-topics/breastfeeding#tab=tab_1 .</li>
-      </ul>
-      <p><strong>Dica do Pericles:</strong> Amamentação é essencial para a saúde da mãe e do bebê. Consulte um profissional para orientação personalizada!</p>
+      <p>Um nível semelhante de proteção contra infecções respiratórias foi relatado em bebês amamentados. Nesse sentido, crianças não amamentadas apresentam um risco de mortalidade por pneumonia até quinze vezes maior em comparação com bebês que são amamentados exclusivamente nos primeiros seis meses de vida. Além disso, bebês que foram amamentados exclusivamente por pelo menos quatro meses têm um risco reduzido de hospitalização por infecções do trato respiratório inferior.</p>
+      <p><strong>Dica do Pericles:</strong> Amamentar é um ato de amor e saúde. Siga as recomendações médicas e garanta o melhor desenvolvimento para o seu bebê!</p>
     </section>
     <section id="fibras-emagrecer">
-      <h2>As fibras podem ajudar a emagrecer?</h2>
-      <p>A fibra é crucial para a digestão e controle do peso. Menos de 5% da população atinge a meta diária recomendada.</p>
-      <h3>Benefícios:</h3>
-      <ul>
-        <li>Promovem saciedade e auxiliam no controle da insulina.</li>
-        <li>Reduzem o colesterol LDL e a pressão arterial.</li>
-      </ul>
-    </section>
-    <section class="cta">
-      <h2>Dúvidas sobre sua saúde?</h2>
-      <p>Fale com nossa equipe técnica agora mesmo!</p>
-      <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-        <a href="https://wa.me/556196592066" target="_blank" class="btn-whatsapp">WhatsApp Pedidos</a>
-        <a href="https://whatsapp.com/channel/0029VbCNcI32f3EG9LzfoK3d" target="_blank" class="btn-whatsapp" style="background:#00b0ff;">Seguir Canal</a>
-      </div>
+        <h2>As fibras podem ajudar a emagrecer?</h2>
+        <p>Muitas vezes negligenciada, a fibra pode ser o "ingrediente secreto" para o sucesso na perda de peso. Elas ajudam a manter a saciedade por mais tempo e melhoram o trânsito intestinal, o que é fundamental para quem busca saúde e boa forma.</p>
+        <p>Incluir aveia, frutas com casca e leguminosas como o feijão pode transformar sua dieta de forma simples e natural.</p>
+        <p><strong>Dica do Pericles:</strong> Fibras são aliadas do coração e da balança. Não esqueça de beber muita água para que elas funcionem corretamente!</p>
     </section>
   </main>
   <footer>
-    <p>© 2026 Atacadão Farma Centro - Cuidando da sua saúde com seriedade e carinho.</p>
+    <p>&copy; 2026 Blog Atacadão Farma Centro - Todos os direitos reservados.</p>
+    <p>As informações contidas neste blog têm caráter informativo e não substituem a consulta médica.</p>
   </footer>
 </body>
 </html>
