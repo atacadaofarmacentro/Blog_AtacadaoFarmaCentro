@@ -36,6 +36,12 @@
     .cta { text-align: center; margin: 50px 0; background: #e0f2f1; padding: 40px; border-radius: 12px; }
     .btn-whatsapp { background: #00796b; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block; font-size: 1.1em; }
     footer { background: #f1f1f1; text-align: center; padding: 25px; font-size: 0.9em; color: #777; border-top: 1px solid #ddd; }
+    
+    /* Estilos para a tabela técnica do Ginseng */
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.95em; }
+    table th, table td { border: 1px solid #eee; padding: 12px; text-align: left; }
+    table th { background: #e0f2f1; color: #00796b; }
+
     @media (max-width: 768px) { .post-list { grid-template-columns: 1fr; } header h1 { font-size: 1.8em; } nav { gap: 10px; } nav a { font-size: 0.85em; } }
   </style>
 </head>
@@ -57,132 +63,146 @@
             <i class="fab fa-whatsapp"></i> Entre no nosso Canal do WhatsApp
         </a>
     </div>
+
     <div class="post-list">
-      <!-- Novo post sobre melancia adicionado no topo (mais recente) -->
+      <div class="post-card">
+        <h3>Potencial farmacológico do Ginseng e dos Ginsenosídeos</h3>
+        <p class="post-date">02/02/2026</p>
+        <p>Conheça as evidências científicas sobre o "rei das ervas": benefícios antioxidantes, anti-inflamatórios e seu papel no suporte a doenças neurológicas.</p>
+        <a href="#ginseng-farmacologia" class="read-more">Leia mais →</a>
+      </div>
       <div class="post-card">
         <h3>A melancia é um superalimento? Analisando as evidências científicas</h3>
         <p class="post-date">30/01/2026</p>
-        <p>Descubra como a combinação única de licopeno e citrulina da melancia oferece benefícios para pressão arterial, estresse oxidativo, recuperação física e saúde cardiometabólica.</p>
+        <p>Descubra como a combinação única de licopeno e citrulina da melancia oferece benefícios para pressão arterial, estresse oxidativo e saúde cardiometabólica.</p>
         <a href="#melancia-superalimento" class="read-more">Leia mais →</a>
       </div>
       <div class="post-card">
         <h3>Via de Produção de Melanina</h3>
         <p class="post-date">29/01/2026</p>
-        <p>Entenda o que é melanina, seus tipos, como é produzida nos melanócitos e o papel da radiação UV na melanogênese. Proteção natural contra danos solares e muito mais!</p>
+        <p>Entenda o que é melanina, seus tipos, como é produzida nos melanócitos e o papel da radiação UV na melanogênese.</p>
         <a href="#melanina-producao" class="read-more">Leia mais →</a>
       </div>
       <div class="post-card">
         <h3>O que é o resfriado comum?</h3>
         <p class="post-date">28/01/2026</p>
-        <p>O resfriado comum (rinofaringite) é a infecção viral mais frequente no mundo, altamente contagiosa e geralmente autolimitada. Entenda sintomas, causas, prevenção e tratamento.</p>
+        <p>O resfriado comum (rinofaringite) é a infecção viral mais frequente no mundo. Entenda sintomas, causas, prevenção e tratamento.</p>
         <a href="#resfriado-comum" class="read-more">Leia mais →</a>
-      </div>
-      <div class="post-card">
-        <h3>O que você precisa saber sobre endometriose</h3>
-        <p class="post-date">27/01/2026</p>
-        <p>Entenda o que é a endometriose, seus sintomas, causas e as opções de tratamento disponíveis para melhorar a qualidade de vida.</p>
-        <a href="#endometriose-info" class="read-more">Leia mais →</a>
-      </div>
-      <div class="post-card">
-        <h3>Por Que a Alimentação Saudável É Mais do Que Uma Moda?</h3>
-        <p class="post-date">24/01/2026</p>
-        <p>Descubra os incríveis benefícios de uma dieta equilibrada para o corpo e a mente, com dicas práticas para começar hoje.</p>
-        <a href="#alimentacao-saudavel" class="read-more">Leia mais →</a>
-      </div>
-      <div class="post-card">
-        <h3>O tratamento precoce do colesterol pode reduzir o risco cardíaco ao longo da vida</h3>
-        <p class="post-date">23/01/2026</p>
-        <p>Em uma simulação computacional de crianças com hipercolesterolemia familiar, iniciar o tratamento hipolipemiante na infância reduz o risco cardiovascular.</p>
-        <a href="#colesterol-precoce" class="read-more">Leia mais →</a>
-      </div>
-      <div class="post-card">
-        <h3>A psilocibina pode ser tão eficaz quanto os antidepressivos comuns no tratamento da depressão</h3>
-        <p class="post-date">23/01/2026</p>
-        <p>Pesquisadores estão testando substâncias psicodélicas como um novo tratamento para a depressão.</p>
-        <a href="#psilocibina-depressao" class="read-more">Leia mais →</a>
-      </div>
-      <div class="post-card">
-        <h3>Benefícios da Amamentação para a Saúde</h3>
-        <p class="post-date">23/01/2026</p>
-        <p>Descubra os inúmeros benefícios do aleitamento materno para bebês e mães, conforme recomendado pela OMS e AAP.</p>
-        <a href="#amamentacao-saude" class="read-more">Leia mais →</a>
-      </div>
-      <div class="post-card">
-        <h3>As fibras podem ajudar a emagrecer?</h3>
-        <p class="post-date">22/01/2026</p>
-        <p>Muitas vezes negligenciada, a fibra pode ser o "ingrediente secreto" para o sucesso na perda de peso.</p>
-        <a href="#fibras-emagrecer" class="read-more">Leia mais →</a>
       </div>
     </div>
 
-    <!-- Nova seção adicionada para o artigo sobre melancia -->
+    <section id="ginseng-farmacologia">
+      <h2>Potencial Farmacológico do Ginseng e dos Ginsenosídeos</h2>
+      <p>Baseado em revisão científica (J Ginseng Res. 2020). Autores: Ratan et al.</p>
+
+      <h3>Introdução ao "Rei das Ervas"</h3>
+      <p>O ginseng tem sido usado como medicina tradicional no Leste Asiático há milhares de anos. Seus principais ingredientes bioativos são os <strong>ginsenosídeos</strong>, saponinas que interagem com as membranas celulares e receptores intracelulares, alterando a expressão gênica para combater diversas condições patológicas.</p>
+
+      <h3>Principais Benefícios Comprovados</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Área</th>
+            <th>Ação e Benefícios</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Anti-inflamatório</strong></td>
+            <td>Suprime vias como NF-κB, reduzindo citocinas que causam dor e inchaço.</td>
+          </tr>
+          <tr>
+            <td><strong>Antioxidante</strong></td>
+            <td>Aumenta níveis de enzimas como glutationa peroxidase, combatendo radicais livres.</td>
+          </tr>
+          <tr>
+            <td><strong>Neuroproteção</strong></td>
+            <td>Potencial para reduzir placas amiloides (Alzheimer) e proteger neurônios (Parkinson).</td>
+          </tr>
+          <tr>
+            <td><strong>Saúde Cardiovascular</strong></td>
+            <td>Melhora a circulação sanguínea, regula o colesterol e ajuda a ajustar o perfil lipídico.</td>
+          </tr>
+          <tr>
+            <td><strong>Diabetes</strong></td>
+            <td>Pode reduzir a glicose no sangue em jejum e melhorar a regulação da insulina.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Segurança e Interações</h3>
+      <p>Apesar de ser considerado seguro, o ginseng pode apresentar interações com medicamentos como o anticoagulante <strong>Varfarina</strong>. O uso durante o primeiro trimestre da gravidez deve ser evitado ou feito sob rigorosa orientação médica.</p>
+
+      <div class="highlight-box">
+        <strong>Nanoginseng:</strong> A ciência moderna está desenvolvendo nanopartículas de ginseng para permitir que os ativos atravessem a barreira hematoencefálica, abrindo portas para novos tratamentos contra câncer e doenças do sistema nervoso.
+      </div>
+
+      <p><strong>Dica do Pericles:</strong> O Ginseng é excelente para vitalidade e saúde mental, mas por ser um fitoterápico potente, converse sempre com seu farmacêutico para conferir se não há interação com seus remédios de uso contínuo!</p>
+    </section>
+
     <section id="melancia-superalimento">
       <h2>A melancia é um superalimento? Analisando as evidências científicas</h2>
       <p>Por Vijay Kumar Malesu. Revisado por Benedette Cuffari, M.Sc.</p>
-
       <h3>Introdução</h3>
-      <p>A melancia (Citrullus lanatus) é composta por 92% de água, sendo simultaneamente rica em vitamina C, carotenoides pró-vitamina A, magnésio e potássio. Essa densidade nutricional, aliada a um baixo valor calórico, despertou crescente interesse científico na composição bioativa da melancia e em seus potenciais benefícios, incluindo efeitos antioxidantes, anti-inflamatórios, vasculares, metabólicos, cognitivos, imunológicos e digestivos.</p>
-
-      <h3>Composição fitoquímica e nutricional</h3>
-      <p>A melancia é uma excelente fonte de hidratação e nutrientes essenciais. A polpa é rica em carboidratos, vitaminas A e C, enquanto a casca e as sementes são ricas em potássio e magnésio. O licopeno é o carotenóide dominante (~9 mg/kg), com formas cis mais biodisponíveis após calor ou acidez. Também é rica em L-citrulina (0,9–5 mg/kg), convertida em L-arginina para produção de óxido nítrico. Flavonoides como rutina e quercetina contribuem para propriedades anti-inflamatórias.</p>
-
-      <h3>Benefícios para a saúde comprovados por evidências</h3>
+      <p>A melancia (Citrullus lanatus) é composta por 92% de água, sendo simultaneamente rica em vitamina C, carotenoides pró-vitamina A, magnésio e potássio. Essa densidade nutricional, aliada a um baixo valor calórico, despertou crescente interesse científico na composição bioativa da melancia e em seus potenciais benefícios.</p>
+      <h3>Benefícios para a saúde comprovados</h3>
       <ul>
-        <li><strong>Saúde cardiovascular:</strong> Reduz pressão arterial sistólica e melhora função endotelial via óxido nítrico. Estudos mostram benefícios em 4 semanas com melancia inteira ou extrato.</li>
-        <li><strong>Atividade antioxidante e anti-inflamatória:</strong> Reduz peroxidação lipídica e aumenta capacidade antioxidante total.</li>
-        <li><strong>Recuperação e desempenho físico:</strong> Suco rico em citrulina reduz dor muscular, melhora performance e diminui lactato pós-exercício.</li>
-        <li><strong>Saúde metabólica:</strong> Maior saciedade, ajuda na perda de peso, melhora perfil lipídico e mantém glicemia estável.</li>
-        <li><strong>Potencial de prevenção do câncer:</strong> Licopeno associado a menor risco de câncer de próstata; inibe dano oxidativo ao DNA e induz apoptose in vitro.</li>
+        <li><strong>Saúde cardiovascular:</strong> Reduz pressão arterial sistólica e melhora função endotelial via óxido nítrico.</li>
+        <li><strong>Atividade antioxidante:</strong> Reduz peroxidação lipídica e aumenta capacidade antioxidante total.</li>
+        <li><strong>Recuperação física:</strong> Suco rico em citrulina reduz dor muscular e melhora performance pós-exercício.</li>
       </ul>
-
-      <h3>Biodisponibilidade e metabolismo</h3>
-      <p>Citrulina é bem absorvida (30–37% em modelo intestinal), com picos plasmáticos em 1–2 horas. Suco não pasteurizado oferece maior biodisponibilidade. Processamento leve maximiza estabilidade de licopeno e citrulina.</p>
-
-      <h3>Limitações e lacunas de pesquisa</h3>
-      <p>Perfis fitoquímicos variam entre cultivares. A maioria dos estudos humanos é pequena, curta e single-center. Faltam ensaios grandes de longo prazo e padronização de doses para recomendações oficiais.</p>
-
-      <h3>Conclusão</h3>
-      <p>A melancia é rica em licopeno e L-citrulina, oferecendo benefícios consistentes para redução de estresse oxidativo, melhora da função endotelial, pressão arterial saudável, recuperação física e manejo de peso. Posiciona-se como alimento funcional promissor para saúde cardiometabólica, mas necessita de mais estudos robustos.</p>
-
-      <p><strong>Dica do Pericles:</strong> A melancia é refrescante, hidrata e traz benefícios reais para o coração e recuperação muscular. Inclua na sua dieta, especialmente no calor! Consulte um nutricionista para um plano personalizado.</p>
+      <p><strong>Dica do Pericles:</strong> A melancia é refrescante, hidrata e traz benefícios reais para o coração e recuperação muscular. Inclua na sua dieta, especialmente no calor!</p>
     </section>
 
-    <!-- Seções existentes mantidas inalteradas -->
     <section id="melanina-producao">
       <h2>Via de Produção de Melanina</h2>
       <p>Revisado pelo Dr. Surat P, Ph.D. Por Megan Knight, BSc</p>
-      <!-- ... todo o conteúdo original da melanina permanece igual ... -->
-      <p><strong>Dica do Pericles:</strong> A melanina é nossa proteção natural contra os raios UV! Use protetor solar diariamente, mesmo em dias nublados, para complementar essa defesa e prevenir danos à pele. Consulte um dermatologista para cuidados personalizados!</p>
+      <p>Entenda o que é melanina, seus tipos, como é produzida nos melanócitos e o papel da radiação UV na melanogênese. A melanina é o pigmento responsável pela cor da pele, cabelos e olhos, funcionando como uma barreira protetora contra danos solares.</p>
+      <p><strong>Dica do Pericles:</strong> A melanina é nossa proteção natural contra os raios UV! Use protetor solar diariamente, mesmo em dias nublados, para prevenir danos à pele.</p>
     </section>
+
     <section id="resfriado-comum">
       <h2>O que é o resfriado comum?</h2>
-      <!-- ... conteúdo original mantido ... -->
-      <p><strong>Dica do Pericles:</strong> O resfriado comum é uma infecção viral comum, mas prevenível com higiene básica. Lave as mãos com frequência e evite tocar o rosto. Consulte um profissional se os sintomas piorarem ou durarem mais de 10 dias!</p>
+      <p>O resfriado comum (rinofaringite) é a infecção viral mais frequente no mundo, altamente contagiosa e geralmente autolimitada. É causado por diversos vírus, sendo os rinovírus os mais comuns. Os sintomas incluem congestão nasal, espirros e dor de garganta.</p>
+      <p><strong>Dica do Pericles:</strong> O resfriado comum é prevenível com higiene básica. Lave as mãos com frequência e evite tocar o rosto!</p>
     </section>
+
     <section id="endometriose-info">
-      <!-- ... conteúdo original mantido ... -->
-      <p><strong>Dica do Pericles:</strong> A endometriose impacta seriamente a vida social e emocional. Se você sente dores intensas, não espere: procure um especialista para orientação personalizada!</p>
+      <h2>O que você precisa saber sobre endometriose</h2>
+      <p>Entenda o que é a endometriose, seus sintomas, causas e as opções de tratamento disponíveis para melhorar a qualidade de vida. A condição ocorre quando o tecido endometrial cresce fora da cavidade uterina, causando dor e inflamação.</p>
+      <p><strong>Dica do Pericles:</strong> A endometriose impacta seriamente a vida. Se você sente dores intensas, procure um especialista para orientação personalizada!</p>
     </section>
+
     <section id="alimentacao-saudavel">
-      <!-- ... conteúdo original mantido ... -->
-      <p><strong>Dica do Pericles:</strong> Uma alimentação saudável é essencial para prevenir doenças e melhorar o bem-estar. Consulte um profissional para orientação personalizada!</p>
+      <h2>Por Que a Alimentação Saudável É Mais do Que Uma Moda?</h2>
+      <p>Descubra os incríveis benefícios de uma dieta equilibrada para o corpo e a mente. Uma alimentação rica em nutrientes previne doenças crônicas, melhora o humor e aumenta a longevidade.</p>
+      <p><strong>Dica do Pericles:</strong> Uma alimentação saudável é essencial para o bem-estar. Consulte um profissional para um plano alimentar sob medida!</p>
     </section>
+
     <section id="colesterol-precoce">
-      <!-- ... conteúdo original mantido ... -->
-      <p><strong>Dica do Pericles:</strong> O tratamento precoce do colesterol é crucial para a saúde cardíaca. Consulte um profissional para orientação personalizada!</p>
+      <h2>O tratamento precoce do colesterol</h2>
+      <p>Em simulações computacionais, iniciar o tratamento hipolipemiante na infância ou juventude reduz drasticamente o risco cardiovascular ao longo da vida, prevenindo o acúmulo de placas nas artérias.</p>
+      <p><strong>Dica do Pericles:</strong> O monitoramento do colesterol deve começar cedo. Consulte seu médico regularmente!</p>
     </section>
+
     <section id="psilocibina-depressao">
-      <!-- ... conteúdo original mantido ... -->
-      <p><strong>Dica do Pericles:</strong> A saúde mental é essencial. Consulte um profissional para opções de tratamento personalizadas e seguras!</p>
+      <h2>Psilocibina no tratamento da depressão</h2>
+      <p>Pesquisadores estão testando substâncias psicodélicas como um novo tratamento para a depressão resistente, mostrando resultados promissores na neuroplasticidade e bem-estar mental em ambientes controlados.</p>
+      <p><strong>Dica do Pericles:</strong> A saúde mental é prioridade. Procure ajuda profissional para tratamentos seguros e regulamentados!</p>
     </section>
+
     <section id="amamentacao-saude">
-      <!-- ... conteúdo original mantido ... -->
-      <p><strong>Dica do Pericles:</strong> Amamentar é um ato de amor e saúde. Siga as recomendações médicas e garanta o melhor desenvolvimento para o seu bebê!</p>
+      <h2>Benefícios da Amamentação para a Saúde</h2>
+      <p>Descubra os inúmeros benefícios do aleitamento materno para bebês e mães, conforme recomendado pela OMS. O leite materno fornece anticorpos essenciais e fortalece o vínculo afetivo.</p>
+      <p><strong>Dica do Pericles:</strong> Amamentar é um ato de amor e saúde. Siga as recomendações médicas para o melhor desenvolvimento do seu bebê!</p>
     </section>
+
     <section id="fibras-emagrecer">
-      <!-- ... conteúdo original mantido ... -->
+      <h2>As fibras podem ajudar a emagrecer?</h2>
+      <p>Muitas vezes negligenciada, a fibra pode ser o "ingrediente secreto" para o sucesso na perda de peso por promover saciedade e regular o índice glicêmico das refeições.</p>
       <p><strong>Dica do Pericles:</strong> Fibras são aliadas do coração e da balança. Não esqueça de beber muita água para que elas funcionem corretamente!</p>
     </section>
+
   </main>
   <footer>
     <p>© 2026 Blog Atacadão Farma Centro - Todos os direitos reservados.</p>
